@@ -1,0 +1,112 @@
+#DLKASJDASDN {
+    margin-top: 50px !important;
+    width: 100%;
+    float: left;
+    line-height: 43px;
+    color: #23476F;
+    font-family: "Roboto Slab", serif;
+    margin: 0 auto 1rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+.ar h5 {
+    color: #23476F;
+    font-weight: 500;
+    padding-top: 2px;
+}
+
+.ar {
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+/* #co{
+    color:#5b6870;
+    font-weight: 400;
+    padding-top: 5%;
+    font-size: 16px;
+} */
+.heading-whyuse.text-center {
+    padding: 72px 0px;
+}
+
+.main-whyuse {
+    /* padding: 21px 0px; */
+    margin-bottom: 50px;
+}
+
+.heading-whyuse.text-center h1 {
+    font-size: 43px;
+    color: #32476f;
+}
+
+.heading-whyuse.text-center p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sdfsdfsdfdsf {
+    max-width: 672px;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px !important;
+    hyphens: auto;
+    line-height: 30px;
+    color: #23476F;
+    margin: 0 auto 32px;
+    text-align: center;
+    line-height: 25px !important;
+}
+
+#asdasdawqwqw {
+    background-color: #FF514E;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nikdsd {
+    width: 100%;
+    float: left;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.scrdsdd {
+    width: 50%;
+    float: left;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+}
+
+.scrdsdd img {
+    width: 100%;
+    float: left;
+    border: 1px solid #777;
+}
+
+.sectiondsdsds p.alice-carousel__prev-btn-item {
+    display: none;
+}
+
+.sectiondsdsds p.alice-carousel__next-btn-item {
+    display: none;
+}
+
+.sectiondsdsds ul.alice-carousel__dots, .alice-carousel__prev-btn, .alice-carousel__next-btn {
+    display: none;
+}

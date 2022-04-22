@@ -1,0 +1,28 @@
+.gobacklink {
+    background: aliceblue;
+}
+article {
+    max-width: 700px;
+    margin: 0px auto;
+}
+.firstblogpageheading.text-center img {
+    max-width: 100%;
+}
+article p {
+    font-size: 18px;
+}
+.firstblogpageheading.text-center h1 {
+    color: #23476f;
+}
+.firstblogpageheading.text-center h2 {
+    color: #48b4fc;
+}
+article ul li {
+    list-style-type: circle !important;
+}
+.lted {
+    padding: 0px 16px;
+}
+article b {
+    font-size: 20px;
+}

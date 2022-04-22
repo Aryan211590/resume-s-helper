@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons / Custom / Rectangular BG / Photo</title>
+    <defs>
+        <path d="M74.2857143,0 L5.71428571,0 C2.55837286,0 0,2.55837286 0,5.71428571 L0,74.2857143 C0,77.4416271 2.55837286,80 5.71428571,80 L74.2857143,80 C77.4416271,80 80,77.4416271 80,74.2857143 L80,5.71428571 C80,2.55837286 77.4416271,0 74.2857143,0 Z" id="path-1"></path>
+        <filter x="-18.8%" y="-18.8%" width="137.5%" height="137.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.852078431   0 0 0 0 0.867890196   0 0 0 0 0.878431373  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icons-/-Custom-/-Rectangular-BG-/-Photo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BG" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" xlink:href="#path-1"></use>
+        </g>
+        <g id="Avatar-icon" transform="translate(12.000000, 14.000000)">
+            <path d="M2.0000228,50.9999362 C0.895440707,50.999959 1.03383968e-12,50.1045183 1.03383968e-12,48.9999362 C1.03383968e-12,48.8785569 0.011049526,48.7574296 0.0330117923,48.6380538 C2.97276236,32.6590474 12.3282405,24.1130295 28.0994461,23 L28.5753976,23.0360033 C44.0589967,24.2864347 53.2558243,32.8204515 56.1658804,48.6380538 C56.1878427,48.7574296 56.1988922,48.8785569 56.1988922,48.9999362 C56.1988922,50.1045183 55.3034515,50.999959 54.1988694,50.9999362 L54.1988694,50.9999362 L2.0000228,50.9999362 Z" id="Combined-Shape" fill="#92CFF9"></path>
+            <rect id="Rectangle" fill="#26A0F4" fill-rule="nonzero" x="12" y="0" width="32" height="32" rx="16"></rect>
+            <path d="M40.517334,25.9689017 C36.7396271,24.0694346 32.5166688,23 28,23 C23.496959,23 19.2421928,24.0629909 15.4729432,25.9517311 C15.4199817,25.9782696 19.7379363,31.9989784 28.0146781,32 C36.2914199,32.0010216 40.5405561,25.980578 40.517334,25.9689017 Z" id="Path" fill="#D4ECFD"></path>
+        </g>
+    </g>
+</svg>

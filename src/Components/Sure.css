@@ -1,0 +1,87 @@
+.sure {
+    width: 100%;
+    float: left;
+    background: #f8fafd;
+}
+
+.profession {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0 auto;
+    color: #23476F !important;
+    text-align: center;
+}
+
+.professionwrap {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.professionSearchBox {
+    float: left;
+}
+
+#professionInput {
+    float: left;
+    min-width: 290px;
+    border-radius: 25px;
+    background: #fff;
+    align-items: center;
+    padding: 15px 10px;
+    border: 1px solid #CDDAF0;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 5%);
+    height: 100%;
+    flex: 1 1 190px;
+}
+
+#professionSearchButton {
+    float: left;
+    background: #FF514E;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    height: 100%;
+    padding: 15px 10px;
+    flex-basis: 80px;
+    margin: 0 0 0 16px;
+    width: 80px;
+    border-radius: 25px !important;
+}
+
+.why {
+    width: 100%;
+    float: left;
+    background-color: #18324F;
+    font-family: "Roboto", sans-serif;
+    padding: 40px 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.why__title {
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 700;
+    margin: 0 auto 60px;
+}
+
+.itemitiledd {
+    font-family: "Roboto Slab", serif;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 700;
+    margin: 20px 0 30px;
+    color: white;
+}
+
+.dffkdjfwow {
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}

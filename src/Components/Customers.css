@@ -1,0 +1,54 @@
+.section-6 {
+    width: 100%;
+    float: left;
+    padding: 72px;
+}
+
+/* img#abc {
+    width: 239px;
+    height: 134px !important;
+} */
+img#abc {
+    width: 163px;
+    height: 93px !important;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+.section-6 ul.react-multi-carousel-track li {
+    border: none !important;
+}
+
+.section-6 ul.react-multi-carousel-track li:hover {
+    transform: none;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.section-6 button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
+    display: none;
+}
+
+.section-6 button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+    display: none;
+}
+
+
+.companies__title {
+    color: #18324F;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding: 0 15px;
+    text-align: center;
+}
+.spopncersd{
+    width: 100%;
+    float: left;
+}
+.spopncersd img{
+    width: 100%;
+    float: left;
+}

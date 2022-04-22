@@ -1,0 +1,41 @@
+/* .main_1 {
+    height: 1000px;
+    background: url(./images/resume-layout.png);
+} */
+/* img.image-max {
+    max-width: 100%;
+    height: 315px;
+    margin-top: 12px;
+} */
+img.image-max {
+    width: 606px;
+    max-width: 100%;
+    white-space: nowrap;
+    margin-top: 12px;
+}
+.main_1 {
+    padding: 30px 0px;
+}
+.main_1 p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #285d9f;
+}
+.main_1 h1 {
+    font-size: 3rem;
+}
+a.started {
+    background: #285D9F;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 16px 32px;
+    margin-top: 100px!important;
+}
+a.started:hover {
+    /* background: #0e2440; */
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+   
+}

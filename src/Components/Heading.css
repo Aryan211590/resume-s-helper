@@ -1,0 +1,162 @@
+h1 {
+    color: rgb(104 104 104);
+}
+
+a.started {
+    background: #285D9F;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 14px 37px;
+}
+
+.header_main {
+    padding: 7px 0px;
+    background: #F9FAFB;
+    border-bottom: 1px solid #b5b5b5c4 !important;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%) !important;
+    height: 71px;
+}
+
+a.started:hover {
+    background: #0e2440;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+  
+}
+
+img.right-img {
+    max-width: 100%;
+    /* height: 385px; */
+}
+
+.main-77 {
+    text-align: center;
+    padding: 43px 0px;
+    background-attachment: fixed !important;
+    background: url(./images/homebackground.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signin_with {
+    text-align: center !important;
+    text-align: center;
+}
+
+p.text-start {
+    margin: 0px 104px;
+}
+
+img.right-img {
+    /* max-width: 100%; */
+    margin-top: 0px;
+    width: 140%;
+    height: 555px;
+}
+
+/* @keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 90000%;
+    }
+}
+.main-77 {
+    background-image: url(https://image.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg);
+    background-repeat: repeat-x;
+    animation: slideleft 10000s infinite linear;
+    -webkit-animation: slideleft 10000s infinite linear;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+}
+/*-- slide --*/
+/* #loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url('http://garudapr.in/wp-content/uploads/2017/12/loader.gif')
+	 no-repeat center center;	
+	z-index: 99999;
+}  */
+
+ul li {
+    list-style-type: none;
+}
+
+.signin_with ul li {
+    display: inline-table;
+    padding: 7px 37px;
+    margin: 0px -7px;
+}
+
+.signin_with {
+    text-align: center;
+}
+
+p {
+    color: #6a6a6a;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+li.google_icon {
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+li.google_icon img {
+    height: 19px;
+}
+
+li.google_icon {
+    cursor: pointer;
+}
+
+.header_main nav {
+    font-family: "Roboto", sans-serif;
+    /* font-size: .8rem; */
+    background: aliceblue;
+    /* text-transform: uppercase; */
+    /* background-color: #fff; */
+    /* border: 1px solid #E8E8E8; */
+    box-shadow: 0 2px 304px 0 rgb(19 74 112 / 16%);
+    /* position: relative; */
+    /* background: #3a95d847 !important; */
+}
+
+.header_main {
+    padding: 7px 0px;
+    background: #f9fafb;
+    border-bottom: 1px solid #b5b5b5c4 !important;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%);
+    height: 71px;
+}
+
+a#logo img {
+    margin-right: 24px;
+    max-width: 100%;
+    height: 51px;
+    width: 140px;
+}
+
+a.nav-link {
+    font-weight: 600 !important;
+    font-size: 15px;
+}
+h1.text-center {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .signin_with ul li {
+        padding: 11px 24px;
+        margin: 0px -5px;
+    }
+}

@@ -1,0 +1,64 @@
+.react-multi-carousel-list img {
+    height: 247px !important;
+}
+
+.react-multi-carousel-list {
+    padding: 78px 0px;
+}
+ul.react-multi-carousel-track li:hover {
+    transform: scale(1.5);
+    transition: all  0.5s;
+    z-index: 1999999999999;
+}
+
+ul.react-multi-carousel-track li {
+    border: 1px solid #b5b5b5;
+    margin: 0px 5px !important;
+}
+ul.react-multi-carousel-track {
+    position: relative;
+}
+ul.react-multi-carousel-track li p a {
+color: #fff;
+text-decoration: none;
+}
+ul.react-multi-carousel-track li p {
+    position: absolute;
+    background: #285D9F;
+    color: #fff;
+    border-radius: 30px;
+    right: 40px;
+    padding: 8px 24px;
+    font-size: 10px;
+    bottom: -3px;
+    cursor: pointer;
+}
+.section-5 {
+    background: aliceblue;
+    padding: 22px 20px;
+}
+.react-multi-carousel-list {
+    display: flex !important;
+    align-items: center !important;
+    /* overflow: none !important; */
+    position: relative !important;
+}
+/* .section-5 h1 {
+    height: 75px;
+    border-bottom: 8px solid #7a7a7a;
+    padding: 0px 34px; 
+} */
+.page-title:after {
+    content: "";
+    margin: 0px auto;
+    display: block;
+    width: 26%;
+    padding-top: 6px;
+    border-bottom: 5px solid #7e7e7e;
+    transition: 0.5s;
+}
+  .page-title:hover:after {
+    border-bottom: 5px solid  rgb(216, 59, 59);
+    width: 38%; /* This will be the new width of your border when on hover */
+  }
+  

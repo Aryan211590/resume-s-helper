@@ -1,0 +1,109 @@
+.ioxvxS {
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    padding-left: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    color: rgb(109, 114, 117);
+}
+
+.maindsdasd {
+    width: 100%;
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+.buttos {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.bveztC {
+    color: rgb(109, 114, 117);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+button.thisiss {
+    height: 45px;
+    border: none;
+    padding: 6px 10px;
+    background-color: rgb(217, 221, 224);
+    border-radius: 0px !important;
+    /* border-bottom-left-radius: 3px !important;
+    border-top-left-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    border-top-right-radius: 3px !important; */
+    color: #5a5e61;
+
+}
+/* button.thisissss {
+    height: 45px;
+    border: none;
+    margin-left: 20px;
+    padding: 6px 10px;
+    background-color: rgb(217, 221, 224);
+    border-bottom-left-radius: 3px !important;
+    border-top-left-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    color: #5a5e61;
+
+}
+button.thisiss:hover {
+    background-color: #5a5e61;
+    color: #ffffff;
+} */
+
+button.thisiss:hover svg#fld{
+    color: #ffffff !important;
+}
+button.thisiss:hover svg#this{
+    color: #ffffff !important;
+}
+button.thisisss {
+    height: 40px;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: rgb(217, 221, 224);
+    border: none;
+    padding: 5px 9px;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    color: #5a5e61;
+}
+/* 
+.sc-1mr94c0-0.huAYAM {
+    margin-left: 20px;
+} */
+
+#lkjkjhk {
+    width: 150px;
+
+}
+
+.temsdsplate {
+    width: 60%;
+   float: left;
+ 
+}
+
+.ramdasjimaharaj {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+}

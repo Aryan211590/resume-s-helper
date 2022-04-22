@@ -1,0 +1,21 @@
+.rambag {
+    width: 100%;
+    float: left;
+}
+
+.rambag #float-label input {
+    width: 99%;
+    float: left;
+}
+
+.rambag p:empty:not(:focus)::before {
+    content: attr(data-placeholder);
+}
+p:empty:not(:focus)::before {
+    content: attr(data-placeholder);
+  } 
+
+.float-right-cus-3 {
+    border-right: 7px solid red ;
+    border-radius: 9px;
+}

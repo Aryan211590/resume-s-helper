@@ -1,0 +1,69 @@
+.Administrative_heading {
+    /* line-height: 4; */
+    padding: 58px 0px;
+}
+.Administrative_heading.text-center h1 {
+    margin-bottom: 34px;
+    -webkit-text-stroke-width: medium;
+    color: #015c9f;
+}
+.Administrative_heading.text-center p {
+    font-size: 19px;
+}
+.image-administrative img {
+    max-width: 100%;
+}
+/* .image-administrative {
+    height: 449px;
+    background: url(../images/resume-layout.png);
+    max-width: 100% !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+.format_data {
+    border-radius: 35px;
+    text-align: center;
+    background: antiquewhite;
+    padding: 16px 12px;
+}
+.format_data.d1 {
+    background: aquamarine;
+}
+.format_data.d2 {
+    background: #64cced;
+}
+.format_data b {
+    font-size: 39px;
+    /* padding-bottom: 14px !important; */
+    color: #015c9e;
+    border-radius: 10px;
+    border-bottom: 5px solid;
+}
+.format_data {
+    max-width: 83%;
+    margin: 0px auto;
+    border-radius: 35px;
+    text-align: center;
+    background: antiquewhite;
+    padding: 16px 12px;
+}
+.brife b {
+    font-size: 40px;
+    text-decoration: underline;
+    color: #015c9e;
+    border-bottom: 3px solid;
+}
+.brife p {
+    font-size: 19px;
+    padding: 6px 0px;
+}
+.brife h3 {
+    font-size: 39px;
+    text-decoration: underline;
+    color: #0d81d5;
+}
+.brife ul li {
+    list-style-type: disclosure-closed;
+    font-size: 22px;
+    color: #444444;
+}

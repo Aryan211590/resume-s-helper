@@ -1,0 +1,79 @@
+.faq_container{
+    background-color: #DEE6F0;
+}
+.help_container,.form_container{
+    background-color: #fff;
+    padding-left: 30px;
+    width:100%;
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+.help_support,.form_head{
+    margin-top: 20px;
+}
+.help_support h3,.form_head h3{
+  color:#5CC1F4;
+  font-weight: 700;
+  font-size:small;
+  text-transform:uppercase;
+  text-align: left;
+  padding-top: 20px;
+}
+.help_support h2,.form_head h2{
+    text-align: left;
+}
+.help_content h4{
+    color:#323944;
+}
+.help_content{
+    margin-top: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background-color: #F3F9FF;
+    border-left: 5px solid #23476f;
+    padding-left: 15px;
+    color:#323944;
+    width: 90%;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+#form_description{
+    color:black;
+}
+.inquiry_form{
+    margin-top:30px;
+    color:black;
+    
+}
+.inquiry_form select{
+    background:transparent;
+    border:none;
+    border-bottom: 1px solid #193651;
+    border-radius: 0;
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.inquiry_form input{
+    box-sizing: border-box;
+    border-bottom: 1px solid #193651 !important;
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+.button input{
+    text-align: center;
+    color:white;
+    width: 30%;
+    border-radius: 30px;
+    background-color: #193651;
+    border:none;
+    outline: none;
+}
+.faq_container {
+    padding: 49px 0px;
+    background-color: #DEE6F0;
+}

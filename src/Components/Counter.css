@@ -1,0 +1,74 @@
+.counterr{
+    background: black;
+    float: left;
+    width: 100%;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.692)),url(./Image/modern-building-office-blue-sky-background_35761-198.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+}
+.counter{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    height: 235px;
+    width: 210px;
+    padding: 55px 25px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.counter:before,
+.counter:after{
+    content: "";
+    background-color: #c95010;
+    height: 172px;
+    width: 148px;
+    border-radius: 10px;
+    box-shadow: 5px 0 5px rgba(0,0,0,0.5) inset;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg) skewY(9deg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+}
+
+.counter:after{
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.counter .counter-icon{
+    color: #888;
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+.counter h3{
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 13px;
+}
+.counter .counter-value{
+    color: #c95010;
+    font-size: 28px;
+    margin-left: 10px;
+    font-weight: 800;
+}
+.counter.purple:before{ background-color: #6d2565; }
+.counter.purple .counter-value{ color: #6d2565; }
+.counter.blue:before{ background-color: #223F51; }
+.counter.blue .counter-value{ color: #223F51; }
+.counter.green:before{ background-color: #2f6328; }
+.counter.green .counter-value{ color: #2f6328; }
+@media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
+}   
+@media only screen and (max-width:479px) and (min-width:320px){
+    .counterr{
+        margin-top: 70px;
+    }
+}

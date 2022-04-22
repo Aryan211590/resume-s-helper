@@ -1,0 +1,38 @@
+@media print {
+
+  .maindsdasd {
+    display: none;
+  }
+  .resume {
+    box-shadow: none !important;
+
+}
+
+.mainresume {
+  /* transform: scale(0.9); */
+  width: 100%;
+  transform: translate(0px, 0px);
+  -webkit-user-select: none;
+  margin: 0px auto !important;
+  user-select: none;
+  float: left;
+}
+  .resume {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    width: 100%;
+  }
+
+  .mainresume {
+    width: 100% !important;
+    transform: translate(0px,0px) !important;
+    -webkit-user-select: none;
+    margin: 0px auto !important;
+    user-select: none;
+  
+  }
+}
+
+/* @page {
+  size: landscape;
+} */

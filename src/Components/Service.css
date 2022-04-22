@@ -1,0 +1,40 @@
+.service {
+    width: 100%;
+    float: left;
+    margin-bottom: 62px;
+    margin-top: 50px;
+}
+.service img {
+    height: 508px;
+}
+.service h5{
+    color: #23476F;
+
+}
+.stand, .standd {
+    width: 100%;
+    float: left;
+    background: rgba(72, 218, 255, 0.144);
+    padding: 30px;
+    margin-top: 127px;
+    text-align: center;
+}
+.noPadding.col-md-4 {
+    padding: 0px;
+}
+.stand {
+    text-align: center;
+}
+.service svg {
+    font-size: 35px;
+}
+.service p {
+    font-weight: 600;
+    color: #68636399;
+}
+.before-after-slider__delimiter {
+    background: #f70606!important;
+}
+.before-after-slider__delimiter-icon {
+    background: #17a095!important;
+}

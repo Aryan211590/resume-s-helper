@@ -1,0 +1,262 @@
+h2 {
+    color: #285d9f;
+    font-size: 43px;
+}
+
+.section-2 {
+    text-align: start;
+}
+
+.section-2 h2 {
+    color: #e1000178;
+}
+
+.steps_title {
+    color: rgb(104 104 104);
+    font-size: 33px;
+}
+
+.b-7 {
+    padding: 0px 10px;
+    border-left: 1px solid #26a0f4;
+
+}
+
+.sub-sec.mt-4 {
+    margin: 93px 0px !important;
+}
+
+a.started {
+    border-radius: 50px !important;
+    text-decoration: none;
+    background-color: #FF514E;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    text-decoration: none;
+    /* float: left; */
+    text-transform: uppercase;
+    margin-top: 10px !important;
+}
+
+.section-2 {
+    background-repeat: no-repeat;
+    padding: 36px 0px;
+
+}
+
+.started {
+    padding: 2px 0px;
+}
+
+/* a.started:hover {
+    border-radius: 50px !important;
+    text-decoration: none;
+    background-color: #FF514E;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px !important;
+} */
+
+iframe.m_steps {
+    max-width: 100%;
+}
+
+.ml_steps {
+    text-align: center;
+}
+
+.ml_steps h1 {
+    font-size: 36px;
+}
+
+.ml_steps p {
+    font-size: 17px;
+    color: currentColor;
+}
+
+.ml_steps p {
+    font-size: 17px;
+    color: currentColor;
+}
+
+p.text-start {
+    margin: 0px 35px;
+}
+
+/* NEW CSS */
+.headline__title {
+    font-size: 48px;
+    line-height: 55px;
+    color: #23476F !important;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+.Resumedd {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    color: #23476F;
+    text-align: center;
+    margin: 0 auto 32px;
+}
+
+.hdhdfh {
+    display: block;
+    color: #23476F !important;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.video__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    color: #23476F !important;
+    line-height: 43px;
+    margin-bottom: 30px;
+}
+
+.video__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.slider__title {
+    color: #214761;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 38px;
+    line-height: 45px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.sectiondsdsds {
+    width: 100%;
+    float: left;
+    padding: 40px 0;
+    background: #f8fafd;
+}
+
+li {
+    display: inline;
+}
+
+.ladu {
+    width: 124%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.ladu .tabs {
+    width: 10%;
+    cursor: pointer;
+    float: left;
+}
+
+button#ladu12 {
+    margin-left: 32px;
+    font-size: 16px;
+    line-height: 42px;
+    padding: 0 20px;
+    border: 1px solid #9AA8B1;
+    border-radius: 50px !important;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    width: auto;
+    box-sizing: border-box;
+    transition: .2s all;
+    border-radius: 22px;
+    font-family: "Roboto", sans-serif;
+    color: #193651;
+
+}
+
+.itme22 img {
+    width: 100%;
+    float: left;
+    z-index: 99999999;
+    transition: 1s;
+
+}
+
+.itme22 {
+    text-align: center;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.itme22:hover {
+    transform: scale(1.2);
+    z-index: 99999999;
+    transition: .5s;
+}
+
+.itemm {
+    padding: 50px 20px 50px 20px;
+}
+
+
+
+.flag {
+    width: 38px;
+    height: 38px;
+    background: url('./images/how-to-steps-number.svg');
+    background-size: 100%, 100%;
+    float: left;
+    margin-right: -12px;
+    margin-right: -12px;
+}
+
+p#kfhdjfh {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 18px;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 105px;
+    background: #fff;
+    cursor: pointer;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 3px 8px 0 rgb(181 186 189 / 75%);
+    transition: opacity .2s;
+    z-index: 999;
+}

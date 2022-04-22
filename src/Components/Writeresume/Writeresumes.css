@@ -1,0 +1,29 @@
+.write-resume-heading-section.text-center img {
+    max-width: 100%;
+}
+.resume-head h2 {
+    font-size: 48px;
+}
+.resume-head p {
+    font-size: 23px;
+    margin-top: 23px;
+}
+.linl {
+    padding: 34px 0px;
+    /* margin-top: 15px !important; */
+    width: 100%;
+    float: left;
+}
+.resume-head {
+    padding: 43px 0px;
+}
+h1.c-9 {
+    color: #009ae9;
+}
+.content-pending.text-center {
+    padding: 67px 0px;
+    border: 6px solid #015c9f;
+}
+.object_content img {
+    max-width: 100%;
+}

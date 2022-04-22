@@ -1,0 +1,23 @@
+.Premium-paln {
+    padding: 66px 0px;
+}
+.Premium-heading.text-center h2 {
+    font-size: 3rem;
+}
+.Premium-heading.text-center p {
+    font-size: 23px;
+    margin-top: 22px;
+}
+@media only screen and (max-width: 600px) {
+    .Premium-heading.text-center h2 {
+        font-size: 2rem;
+    }
+    .Premium-heading.text-center p {
+        font-size: 18px;
+        margin-top: 22px;
+    }
+  }
+  .Premium-heading.text-center.mb-5 {
+    margin-bottom: 48px !important;
+    padding: 19px 0px;
+}

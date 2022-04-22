@@ -1,0 +1,19 @@
+.planbacklink svg {
+    color: #ffffff;
+    font-size: 40px;
+}
+.paln-header_main {
+    background: #2960a1;
+    /* padding: 0px !important; */
+    border-bottom: 5px solid #2eb6fc;
+    color: #fff !important;
+    /* padding: 1px 0px; */
+    padding-top: 12px;
+    box-shadow: 0px 0px 9px 3px rgb(41 41 41 / 25%);
+}
+.palntitle p {
+    font-weight: bold;
+    padding: 9px 0px;
+    color: #fff !important;
+    font-size: 21px;
+}
