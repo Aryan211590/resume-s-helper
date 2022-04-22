@@ -4,6 +4,7 @@ import blogi from '../images/blog.png'
 import { Container, Row, Col } from "react-bootstrap";
 // import Cartdesign from './Cartdesign';
 import BlogCart from './BlogCart';
+import { Link } from 'react-router-dom';
 const Blog_one = () => {
   return (
     <>
@@ -13,12 +14,8 @@ const Blog_one = () => {
             <Row>
               <Col md={6}>
                 <h1>Resume's helper Blog</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque tempore dolores voluptas rerum nisi autem
-                  reprehenderit nesciunt sit
-                  sapiente iste consequatur iusto aut dolorem sunt, corporis
-                  suscipit? Porro, dolore magnam.</p>
-                <a className="started mt-4" href="dfkahsdkfjh">Create my resume</a>
+                <p>Whether you’re creating your first resume online or you’re a seasoned professional, ResumeHelper is here to help you get the most out of your resume.</p>
+                <Link className="started mt-4" to="/editor">Create my resume</Link>
               </Col>
               <Col md={6}>
                 <img src={blogi} alt="" srcSet="" />

@@ -41,6 +41,16 @@ import Changetemp from "./Components/Changetemp";
 import Copy from "./Components/Copy";
 import NewComponent from "./Components/NewComponent ";
 import Forgot from "./Components/signin/Forgot";
+import Secondpage from "./Components/Blogs/blogpages/Seconpage";
+import Thirdpage from "./Components/Blogs/blogpages/Thirdpage";
+import Fourthpage from "./Components/Blogs/blogpages/Fourthpage";
+import Fifthpage from "./Components/Blogs/blogpages/Fifthpage";
+import Sixthpage from "./Components/Blogs/blogpages/Sixthpage";
+import Seventhpage from "./Components/Blogs/blogpages/Seventhpage";
+import Eightpage from "./Components/Blogs/blogpages/Eightpage";
+import TermCondition from "./Components/TermCondition";
+import TermUse from "./Components/TermUse";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
 function App() {
   return (
     <div className="App">
@@ -54,7 +64,21 @@ function App() {
         <Route exact path="/Login" element={<Login />} />
         <Route exact path="/Blog" element={<Blog />} />
         <Route exact path="/Resumeheader" element={<Resumeheader />} />
-        <Route exact path="/Blog/Blog-first" element={<Blogfirst />} />
+       
+
+        <Route exact path="/Blog/communication-skill" element={<Blogfirst />} />
+        <Route exact path="/Blog/leadership" element={<Secondpage/>}/>
+        <Route exact path="/Blog/thankyou" element={<Thirdpage/>}/>
+        <Route exact path="/Blog/activities" element={<Fourthpage/>}/>
+        <Route exact path="/Blog/mistakes" element={<Fifthpage/>}/>
+        <Route exact path="/Blog/writingtips" element={<Sixthpage/>}/>
+        <Route exact path="/Blog/interviewtips" element={<Seventhpage/>}/>
+        <Route exact path="/Blog/showcase" element={<Eightpage/>}/>
+        <Route exact path="/termcondition" element={<TermCondition/>}/>
+        <Route exact path="/termuse" element={<TermUse/>}/>
+        <Route exact path="/privacy" element={<PrivacyPolicy/>}/>
+
+
         <Route exact path="/Template-one" element={<Templateone />} />
         <Route exact path="/About" element={<About />} />
         <Route exact path="/Contact" element={<Contact />} />
