@@ -51,6 +51,7 @@ import Eightpage from "./Components/Blogs/blogpages/Eightpage";
 import TermCondition from "./Components/TermCondition";
 import TermUse from "./Components/TermUse";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
+import CookiesPolicy from "./Components/CookiesPolicy";
 function App() {
   return (
     <div className="App">
@@ -77,6 +78,7 @@ function App() {
         <Route exact path="/termcondition" element={<TermCondition/>}/>
         <Route exact path="/termuse" element={<TermUse/>}/>
         <Route exact path="/privacy" element={<PrivacyPolicy/>}/>
+      <Route exact path="/cookies"element={<CookiesPolicy/>}/>
 
 
         <Route exact path="/Template-one" element={<Templateone />} />
