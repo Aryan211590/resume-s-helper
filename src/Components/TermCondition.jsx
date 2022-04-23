@@ -16,7 +16,7 @@ export default function TermCondition() {
          <p>Effective date: Nov 2020</p>
          <h3 style={{fontWeight:"bold"}}>General</h3>
 
-         <p>The present website is owned and operated by Lead Career S.L. which is a private company, duly registered with the Trade Registry of Barcelona, Book 45832 Folio 48 S8 Page B500429 and entry I/A 1, with TAX ID B66969718 and with its registered office at Av. Litoral Mar 12-14, 5ª Pl.08005 Barcelona, Spain and contact email: contact@resumecoach.com. Hereinafter, referred to as, the/this/our “Website”, “we” or “the/our Company”.</p>
+         <p>The present website is owned and operated by Lead Career S.L. which is a private company, duly registered with the Trade Registry of Barcelona, Book 45832 Folio 48 S8 Page B500429 and entry I/A 1, with TAX ID B66969718 and with its registered office at Av. Litoral Mar 12-14, 5ª Pl.08005 Barcelona, Spain and contact email: contact@resumehelper.com. Hereinafter, referred to as, the/this/our “Website”, “we” or “the/our Company”.</p>
 
          <p>These Terms and Conditions explain the conditions of access to the services offered on this Website, to which the User is automatically linked at the time of creating an account herein. By clicking the “Sign up” button, the User clearly states that he/she has read, understood, and agreed to be bound by these Terms and Conditions. Moreover, the confirmation of payment of a subscription plan to the services offered through this Website automatically confers the User the status of Customer. Hereinafter, referred to as “you”, “your”, “the Customer/s”, the “User/s”.</p>
 
@@ -24,7 +24,7 @@ export default function TermCondition() {
 
          <p>These Terms and Conditions are permanently available on the present Website so that you can consult them at all times.</p>
 
-         <p>For any doubts or questions related to these Terms and Conditions you can contact us through our Customer Service: contact@resumecoach.com or through our Contact Form.</p>
+         <p>For any doubts or questions related to these Terms and Conditions you can contact us through our Customer Service: contact@resumehelper.com or through our Contact Form.</p>
 
          <h3 style={{fontWeight:"bold"}}>Description of Services</h3>
 
@@ -32,7 +32,7 @@ export default function TermCondition() {
          <ul>
              <li className='list'>Access to specialized content, tooltips, and services in relation to the creation of professional documentation such as a resume, cover letters, and/or an electronic profile, etc.</li>
              <li className='list'>The ability to search for job offers and online courses that might be of their interest.</li>
-             <li className='list'>24/7 multilingual Customer Service which can be contacted by different means: contact@resumecoach.com or through this CONTACT FORM. For further information, check the “Customer Service” section of these Terms and Conditions.</li>
+             <li className='list'>24/7 multilingual Customer Service which can be contacted by different means: contact@resumehelper.com or through this CONTACT FORM. For further information, check the “Customer Service” section of these Terms and Conditions.</li>
          </ul>
 
          <p>Please note that the User and/or Customer is the sole owner and responsible party for the professional documents, personal data and/or private information that he/she creates, edits, incorporates, and/or stores on this Website. In this sense:</p>
@@ -110,7 +110,7 @@ export default function TermCondition() {
 
         <h3 style={{fontWeight:"bold"}}>Merchant of Record</h3>
 
-        <p>Please be informed that our Merchant of Record is: Lead Career S.L., a private company with TAX ID number B66969718 with a registered office at Av. Litoral Mar 12-14, 5ª Pl.08005 Barcelona, Spain and contact email: contact@resumecoach.com. Hereinafter referred to as “the Merchant of Record”.</p>
+        <p>Please be informed that our Merchant of Record is: Lead Career S.L., a private company with TAX ID number B66969718 with a registered office at Av. Litoral Mar 12-14, 5ª Pl.08005 Barcelona, Spain and contact email: contact@resumehelper.com. Hereinafter referred to as “the Merchant of Record”.</p>
 
         <p>The Merchant of Record will make and manage the collection of the total costs of the subscription plan selected by the Customer and, where appropriate, will approve and issue a refund.</p>
 
@@ -162,7 +162,7 @@ If you need any further information about our cancellation policy, please contac
 
         <p>We have 24/7 multilingual Customer Service to facilitate communication between you and our Company. Our Customer Service will take care of your inquiries, suggestions, complaints, and/or claims regarding the services we offer through this Website, and where appropriate, managing the cancellation requests received.</p>
 
-        <p>You can contact our Customer Service team via the following means: contact@resumecoach.com or through our Contact Form.</p>
+        <p>You can contact our Customer Service team via the following means: contact@resumehelper.com or through our Contact Form.</p>
 
         <p>Be aware, we carefully process each individual question/email, so we will respond to you in the shortest time frame possible and, in any case, within the deadline established by the applicable laws and regulations.</p>
 

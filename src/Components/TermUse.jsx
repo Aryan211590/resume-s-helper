@@ -55,7 +55,7 @@ export default function TermUse() {
 
                     <p>The use of the present website is at the User’s own responsibility and risk. The Company makes its best efforts to ensure the availability of the website and the safe navigation of the User. However, access to this website may be punctually interrupted by maintenance tasks and/or the upload of updates of the contents and/or professional documents offered through it. Also, we cannot guarantee that the website will be maintained without interruptions, delays, errors, or omissions for reasons beyond our control, as well as for possible damages that may be caused by third parties through illegitimate intrusion beyond our control.</p>
 
-                    <p>Notwithstanding the preceding, the Company will exert its best efforts to be as accurate as possible and to avoid mistakes in the content and information provided on the website. If you detect any inaccuracy, we kindly ask you to inform our Customer Service Team by email contact@resumecoach.com or through our Contact form.</p>
+                    <p>Notwithstanding the preceding, the Company will exert its best efforts to be as accurate as possible and to avoid mistakes in the content and information provided on the website. If you detect any inaccuracy, we kindly ask you to inform our Customer Service Team by email contact@resumehelper.com or through our Contact form.</p>
 
                     <p>Neither the Company nor its partners, suppliers, employees, or representatives will consequently be liable for any error or omission on the website or if the content and information of this website is used by a User or a third party for unlawful purposes and/or to cause damage to third parties or to the Company’s reputation.</p>
 
@@ -67,7 +67,7 @@ export default function TermUse() {
 
                     <h2 style={{ fontWeight: "bold" }}>Intellectual Property Rights</h2>
 
-                    <p>www.ResumeCoach.com is a domain registered by the Company. Therefore, it cannot be used by third parties in connection with other products and/or services other than those professional documents offered on this website in any way that may cause confusion between our Users and/or discredit of the Company.</p>
+                    <p>www.resumehelper.com is a domain registered by the Company. Therefore, it cannot be used by third parties in connection with other products and/or services other than those professional documents offered on this website in any way that may cause confusion between our Users and/or discredit of the Company.</p>
 
                     <p>The totality of the elements contained on this website, whether it be texts, articles, descriptions, images, graphics, sounds, videos, brands, logos, interactive features or any other element, its structure and design, the selection and presentation of the content and elements included therein, or any other element, and the software necessary for its operation, access and utilization are the property of the Company or, as the case may be, by the partners of the company with whom we have submitted the corresponding licenses. All the elements of the present website are protected by intellectual property rights that must be respected by the User and/or Customer. This matter is also warned with a copyright notice on the homepage of this website.</p>
 

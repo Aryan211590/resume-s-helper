@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
 
          <h2 style={{ fontWeight: "bold" }}>Who is your personal data controller?</h2>
 
-         <p>Resumecoach.com will be the controller of your personal data collected, when you browse our website, you use the services offered herein and/or you contact our Customer Service team by email, phone, chat or mail for any reason.</p>
+         <p>resumehelper.com will be the controller of your personal data collected, when you browse our website, you use the services offered herein and/or you contact our Customer Service team by email, phone, chat or mail for any reason.</p>
 
          <h2 style={{ fontWeight: "bold" }}>When does this Privacy Policy apply?</h2>
 
@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
             <li className='list'>To carry out periodic checks against fraudulent, unauthorized or illegal activity on/or through our Website.</li>
         </ul>
 
-        <p>Please be informed that if you contact our Customer Service via telephone, your phone call will be recorded for security purposes and to improve the quality of the telephone service, this being a standard practice in many companies. You will be informed in advance that your call will be recorded and you will also have access to the information on how the Company processes the personal data you will be required to provide during the call to verify your identity as a Customer and the subscription plan you have contracted in order to properly attend to your request. Please be informed that your call will only be recorded if you give us your express consent for it, which will be understood to be granted if you do not hang up and wait to be attended to by an agent from the Customer Service team. If you do not want to be recorded, then you must hang up and not continue with your call and contact our Customer Service by email contact@resumecoach.com.</p>
+        <p>Please be informed that if you contact our Customer Service via telephone, your phone call will be recorded for security purposes and to improve the quality of the telephone service, this being a standard practice in many companies. You will be informed in advance that your call will be recorded and you will also have access to the information on how the Company processes the personal data you will be required to provide during the call to verify your identity as a Customer and the subscription plan you have contracted in order to properly attend to your request. Please be informed that your call will only be recorded if you give us your express consent for it, which will be understood to be granted if you do not hang up and wait to be attended to by an agent from the Customer Service team. If you do not want to be recorded, then you must hang up and not continue with your call and contact our Customer Service by email contact@resumehelper.com.</p>
 
         <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
 
@@ -108,7 +108,7 @@ export default function PrivacyPolicy() {
 
         <p>We will process your personal data for as long as necessary to fulfill the purposes for which they were collected and, beyond that, your personal data will be retained, and duly securely blocked for the necessary period that We need to keep it. For example, it will be kept for as long as necessary to comply with our legal obligations and/or address possible claims related to the services offered through this Website; to finish an investigation of a fraudulent or illicit activity detected; to retain Cookies’ information providing that you do not revoke consent, etc. Once the necessary retention period has ended, your personal data will be securely deleted from our information systems.</p>
 
-        <p>Moreover, if you have provided Us with your consent to process your personal data for specific purposes, note that you can withdraw said consent at any time by contacting our Customer Service team by email contact@resumecoach.com and/or by clicking the link to unsubscribe in case of electronic commercial communications.</p>
+        <p>Moreover, if you have provided Us with your consent to process your personal data for specific purposes, note that you can withdraw said consent at any time by contacting our Customer Service team by email contact@resumehelper.com and/or by clicking the link to unsubscribe in case of electronic commercial communications.</p>
 
         <h2 style={{ fontWeight: "bold" }}>Who Do We Share Personal Data With?</h2>
 
@@ -135,7 +135,7 @@ export default function PrivacyPolicy() {
 
         <h2 style={{ fontWeight: "bold" }}>What Rights Do You Have and How Can You Exercise Them?</h2>
 
-        <p>You may, with any cost, exercise your rights of: access, rectification, erasure, restriction of processing, to object, as well as the right to the portability of your personal data, by a written request addressed to Us, sent by email to: contact@resumecoach.com or by post to Stream Image Stream Image Stream Image Stream Image Stream Image Stream Image Stream Image Stream Image.</p>
+        <p>You may, with any cost, exercise your rights of: access, rectification, erasure, restriction of processing, to object, as well as the right to the portability of your personal data, by a written request addressed to Us, sent by email to: contact@resumehelper.com or by post to Stream Image Stream Image Stream Image Stream Image Stream Image Stream Image Stream Image Stream Image.</p>
 
         <p>You may modify the “privacy settings” of your Website browser to set up tracking cookies at any time. Also, you can install programs or add-ons to your browser, known as “Do Not Track” tools, which will allow you to choose the Cookies you want to allow. For further information, check our Cookies Policy.</p>
 
@@ -143,7 +143,7 @@ export default function PrivacyPolicy() {
 
         <p>When you consider it appropriate, you have the right to lodge a complaint before the corresponding Supervisory Authority, for example, when you consider that your data protection rights have not been adequately addressed.</p>
 
-        <p>We remain at your disposal for any doubts or questions you may have about the present Privacy Policy or about the processing of your personal data, so please don’t hesitate to contact Us: contact@resumecoach.com.</p>
+        <p>We remain at your disposal for any doubts or questions you may have about the present Privacy Policy or about the processing of your personal data, so please don’t hesitate to contact Us: contact@resumehelper.com.</p>
 
          </div>
 
