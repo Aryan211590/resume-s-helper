@@ -77,16 +77,22 @@ export default async function getCroppedImg(
   canvas.width = pixelCrop.width
   canvas.height = pixelCrop.height
 
+  console.log("canvas.width",  canvas.width )
+  console.log("canvas.height", canvas.height)
   // paste generated rotate image at the top left corner
   ctx.putImageData(data, 0, 0)
 
   // As Base64 string
   // return canvas.toDataURL('image/jpeg');
 
+  localStorage.setItem("img", canvas.toDataURL('image/jpeg'))
+  return canvas.toDataURL('image/jpeg');
+
+  }
   // As a blob
-  return new Promise((resolve, reject) => {
-    canvas.toBlob((file) => {
-      resolve(URL.createObjectURL(file))
-    }, 'image/jpeg')
-  })
-}
+//   return new Promise((resolve, reject) => {
+//     canvas.toBlob((file) => {
+//       resolve(URL.createObjectURL(file))
+//     }, 'image/jpeg')
+//   })
+// }

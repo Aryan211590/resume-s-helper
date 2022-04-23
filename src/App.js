@@ -107,7 +107,7 @@ function App() {
         />
         <Route exact path="/StudentResume" element={<StudentResume />} />
         <Route exact path="/Entry" element={<Entry />} />
-        <Route exact path="/Administrative" element={<Administrative />} />
+        <Route exact path="/Administrative" element={<Administrative />} />   
         <Route exact path="/CustomerService" element={<CustomerService />} />
         <Route exact path="/GraphicDesigner" element={<GraphicDesigner />} />
         <Route exact path="/Nurse" element={<Nurse />} />
