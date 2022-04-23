@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const Cartdesign = (props) => {
     return (
         <>
@@ -8,7 +9,7 @@ const Cartdesign = (props) => {
                 <p>
                     {props.content}
                 </p>
-                <a className="started mt-4" href={props.linkTo}>Read More</a>
+                <Link className="started mt-4" to={props.linkTo}>Read More</Link>
             </Col>
         </>
     );

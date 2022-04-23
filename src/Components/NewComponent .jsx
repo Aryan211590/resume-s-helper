@@ -1797,9 +1797,9 @@ const NewComponent = (props) => {
                                   src={
                                     localStorage.getItem("img")
                                       ? localStorage.getItem("img")
-                                      : "https://www.mcicon.com/wp-content/uploads/2021/01/People_User_1-copy-4.jpg"
+                                      : "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
                                   }
-                                  alt="Loading..."
+                                  alt="Profile Photo"
                                 />
                               </div>
                             </Col>
@@ -2081,9 +2081,9 @@ const NewComponent = (props) => {
                                   src={
                                     localStorage.getItem("img")
                                       ? localStorage.getItem("img")
-                                      : "https://www.mcicon.com/wp-content/uploads/2021/01/People_User_1-copy-4.jpg"
+                                      : "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
                                   }
-                                  alt="Loading..."
+                                  alt="Profile Photo"
                                   className={
                                     localStorage.getItem("Rades") === true
                                       ? "border-radius-50"
@@ -2556,9 +2556,9 @@ const NewComponent = (props) => {
                                   src={
                                     localStorage.getItem("img")
                                       ? localStorage.getItem("img")
-                                      : "https://www.mcicon.com/wp-content/uploads/2021/01/People_User_1-copy-4.jpg"
+                                      : "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
                                   }
-                                  alt="Loading..."
+                                  alt="Profile Photo"
                                   className={
                                     
                                     (localStorage.getItem("Rades") === 'true'

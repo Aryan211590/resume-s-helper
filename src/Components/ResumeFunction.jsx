@@ -2012,7 +2012,7 @@ const ResumeFunction = () => {
                                       src={
                                         localStorage.getItem("img")
                                           ? localStorage.getItem("img")
-                                          : ""
+                                          : "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
                                       }
                                       className={
                                         "d-defuk" +" "+ 
