@@ -386,7 +386,7 @@ const ResumeFunction = () => {
                   onChange={(e) => {
                     setTitle(e.target.value);
                   }}
-                  maxLength="30"
+                  
                 />
                 <label htmlFor="Job title" className={isActive ? "Active" : ""}>
                   Job title / Position
@@ -521,7 +521,7 @@ const ResumeFunction = () => {
                   name="AboutJob"
                   className="des"
                   cols="2"
-                  rows="10"
+                  rows="15"
                   maxLength="250"
                   required
                   id="descc"
@@ -2304,8 +2304,8 @@ const ResumeFunction = () => {
                               <TextareaAutosize
                                 type="text"
                                 className="des"
-                                cols="2"
-                                rows="10"
+                                cols="5"
+                                rows="15"
                                 id="descc"
                                 name="about_us"
                                 value={state.about_us}
@@ -2313,7 +2313,8 @@ const ResumeFunction = () => {
                                 // maxLength="300"
                                 maxLength="250"
                                 required
-                                style={{ paddingLeft: "10px" }}
+                                style={{ paddingLeft: "10px",linHeight:'normal',
+                                paddingTop:'30px'}}
                                 // edited
                               />
                               <label

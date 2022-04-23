@@ -17,7 +17,10 @@ import cover6 from '../images/cover6.png'
 import cover7 from '../images/cover7.png'
 import Resumeheader from "../Resumeheader";
 import { useNavigate } from "react-router-dom";
+import TextareaAutosize from "react-textarea-autosize";
 const Coverlatter = () => {
+
+    const [descc, setDescc] = useState("");
     let navigate = useNavigate();
     let submit_cover_letter = async () => {
         // e.preventDefault();
@@ -443,6 +446,25 @@ const Coverlatter = () => {
                                                 e.g. 565-298-4457
                                             </p>
                                         </div>
+                                    </Col>
+                                   
+                                    <Col>
+                                    <div id="float-label">
+                                    <TextareaAutosize
+                      type="text"
+                      value={descc}
+                      cols="2"
+                      rows="10"
+                      onChange={(e) => setDescc(e.target.value)}
+                      className="des"
+                      id="descc"
+                      maxLength="200"
+                      // edited
+                      required
+                      style={{ paddingLeft: "10px" }}
+                    />
+                    <label htmlFor="descc"> Description</label>
+                    </div>
                                     </Col>
                                     <div className="tab-button">
                                         {/* <button className='button-left-cus' onClick={() => NexttoggleTab(4)}>Next</button> */}
