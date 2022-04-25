@@ -3,9 +3,11 @@ import Header from './Header';
 import "./Faq.css";
 import { RiQuestionLine } from "react-icons/ri";
 import { Accordion, Row, Col, Container } from 'react-bootstrap';
+import Footer from './Footer';
 
 export default function Faq() {
     return (
+        <>
         <div>
             <Header />
             <div className="jumbotron-txt" >
@@ -292,5 +294,6 @@ export default function Faq() {
 
 
         </div>
+        <Footer/></>
     )
 }
