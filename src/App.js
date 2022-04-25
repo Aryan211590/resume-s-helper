@@ -52,6 +52,7 @@ import TermCondition from "./Components/TermCondition";
 import TermUse from "./Components/TermUse";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import CookiesPolicy from "./Components/CookiesPolicy";
+import Faq from "./Components/Faq";
 function App() {
   return (
     <div className="App">
@@ -79,7 +80,7 @@ function App() {
         <Route exact path="/termuse" element={<TermUse/>}/>
         <Route exact path="/privacy" element={<PrivacyPolicy/>}/>
       <Route exact path="/cookies"element={<CookiesPolicy/>}/>
-
+    <Route exact path="/faq" element={<Faq/>}/>
 
         <Route exact path="/Template-one" element={<Templateone />} />
         <Route exact path="/About" element={<About />} />

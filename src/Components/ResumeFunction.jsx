@@ -402,7 +402,7 @@ const ResumeFunction = () => {
                   required
                   value={companyname}
                   onChange={(e) => setcompanyname(e.target.value)}
-                  maxLength="38"
+                 
                 />
                 <label
                   htmlFor="companyname"
@@ -421,7 +421,7 @@ const ResumeFunction = () => {
                   required
                   value={Location}
                   onChange={(e) => setLocation(e.target.value)}
-                  maxLength="38"
+             
                 />
                 <label htmlFor="Location" className={isActive ? "Active" : ""}>
                   Location
@@ -618,7 +618,7 @@ const ResumeFunction = () => {
               <Col className="">
                 <div id="float-label">
                   <input
-                    maxLength="50"
+                   
                     type="text"
                     value={schooll}
                     onChange={(e) => setschool(e.target.value)}
@@ -639,7 +639,7 @@ const ResumeFunction = () => {
               <Col className="">
                 <div id="float-label">
                   <input
-                    maxLength="50"
+                   
                     type="text"
                     value={Locationnn}
                     onChange={(e) => setLocation(e.target.value)}
@@ -715,7 +715,7 @@ const ResumeFunction = () => {
                       onChange={(e) => setDescc(e.target.value)}
                       className="des"
                       id="descc"
-                      maxLength="200"
+                      maxLength="250"
                       // edited
                       required
                       style={{ paddingLeft: "10px" }}
@@ -1971,7 +1971,7 @@ const ResumeFunction = () => {
                                     name="Name"
                                     value={state.Name}
                                     onChange={handleChange}
-                                    maxLength="24"
+                                  
                                   />
                                   <label
                                     htmlFor="Name"
@@ -1988,7 +1988,7 @@ const ResumeFunction = () => {
                                     className="input-cus"
                                     value={state.LastName}
                                     onChange={handleChange}
-                                    maxLength="30"
+                                   
                                   />
                                   <label
                                     htmlFor="LastName"
@@ -2100,7 +2100,7 @@ const ResumeFunction = () => {
                                 name="Occupation"
                                 value={state.Occupation}
                                 onChange={handleChange}
-                                maxLength="30"
+                                
                               />
                               <label
                                 htmlFor="Occupation"
@@ -2203,8 +2203,7 @@ const ResumeFunction = () => {
                             <div id="float-label">
                               <div className="adjust">
                                 <input
-                                  maxLength="100"
-                                  type="text"
+                                      type="text"
                                   name="Address"
                                   value={state.Address}
                                   onChange={handleChange}
@@ -2238,7 +2237,7 @@ const ResumeFunction = () => {
                               className="form-control  border-0"
                             >
                               <input
-                                maxLength="15"
+                               
                                 type="tel"
                                 name="Phone"
                                 value={state.Phone}

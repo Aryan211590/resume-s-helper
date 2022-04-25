@@ -53,7 +53,7 @@ const Footer = () => {
                            
                            <li> <Link to="/privacy">Privacy Policy</Link></li>
                             <li><Link to="/cookies">Cookies Policy</Link></li>
-                            <li><a href="bottomfoot">FAQ</a></li>
+                            <li><Link to="/faq">FAQ</Link></li>
                         </ul>
                     </div>
                     <div className="copyright text-center">
