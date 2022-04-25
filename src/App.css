@@ -942,9 +942,9 @@ button.del-cus.btn.btn-sm.btn-danger {
   background: red;
 } */
 
-textarea {
+/* textarea {
   padding-top: 22px;
-}
+} */
 
 .skillListPerent {
   margin-right: 12px;
@@ -2128,6 +2128,7 @@ li.text-start-cus input[type="checkbox"] {
 .tab-button {
   background: #ffffff;
   bottom: 0px;
+  /* bottom: -60px; */
   border-radius: 6px;
   box-shadow: rgb(0 0 0 / 50%) 0px -10px 25px -26px;
   /* border: 1px solid #48B4FC; */
@@ -4560,3 +4561,81 @@ input:checked + .slider:before {
 .border-radius-none{
   border-radius: 0%!important;
 }
+
+
+
+/* ---------------------button------------------------- */
+
+
+
+.cInLpq {
+  min-height: 48px;
+  flex-wrap: wrap;
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 12px 0px;
+  box-sizing: border-box;
+}
+
+.cdkVzw {
+  background: rgb(240, 243, 245);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dWhIuH {
+  padding: 0px 15px;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(231, 235, 238);
+}
+
+.dmJJNL {
+  margin-right: 8px;
+  padding: 0px;
+  cursor: pointer;
+  height: 24px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: rgb(90, 94, 97);
+  background-color: transparent;
+}
+
+.bmEOHV {
+  margin-right: 8px;
+  padding: 0px;
+  cursor: pointer;
+  height: 24px;
+  border: 1px solid rgb(38, 160, 244);
+  border-radius: 4px;
+  color: rgb(90, 94, 97);
+  background-color: transparent;
+}
+
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+[data-tm-event-action] button, [data-tm-event-action] [data-tm-event-action]
+{
+  pointer-events: visible;
+}
+
+[data-tm-event-action] :not([data-tm-event-action]) {
+  pointer-events: none;
+}
+

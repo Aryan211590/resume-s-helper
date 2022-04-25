@@ -26,11 +26,11 @@ const Coverlatter = () => {
         // e.preventDefault();
         var token = localStorage.getItem('sdfsafdsfsafa')
         if (token) {
-            if ('edit_this_cover' in localStorage && localStorage.getItem('edit_this_cover') == 'true'){
-                if ('cover_letter_id' in localStorage){
+            if ('edit_this_cover' in localStorage && localStorage.getItem('edit_this_cover') == 'true') {
+                if ('cover_letter_id' in localStorage) {
                     try {
                         let res = await fetch("https://resumeshelper.com/api/edit-user-coverletter", {
-                        // let res = await fetch("http://127.0.0.1:8000/api/addusercoverleter", {
+                            // let res = await fetch("http://127.0.0.1:8000/api/addusercoverleter", {
                             method: "POST",
                             crossDomain: true,
                             headers: {
@@ -53,33 +53,33 @@ const Coverlatter = () => {
                         console.log(err);
                     }
                 }
-            }else{
+            } else {
                 try {
                     let res = await fetch("https://resumeshelper.com/api/addusercoverleter", {
                         // let res = await fetch("http://127.0.0.1:8000/api/addusercoverleter", {
-                            method: "POST",
-                            crossDomain: true,
-                            headers: {
-                                'Content-Type': 'application/json',
-                                'Authorization': 'token ' + localStorage.getItem("sdfsafdsfsafa"),
-                            },
-                            body: JSON.stringify({
-                                info: state,
-                                cover_id: toggleState
-                            }),
-                        });
-                        let resJson = await res.json();
-                        if (res.status === 200) {
-                            alert("Submited")
-                            navigate(`/Dashboard`)
-                        } else {
-                            // alert(res.msg)
-                        }
-                    } catch (err) {
-                        console.log(err);
+                        method: "POST",
+                        crossDomain: true,
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': 'token ' + localStorage.getItem("sdfsafdsfsafa"),
+                        },
+                        body: JSON.stringify({
+                            info: state,
+                            cover_id: toggleState
+                        }),
+                    });
+                    let resJson = await res.json();
+                    if (res.status === 200) {
+                        alert("Submited")
+                        navigate(`/Dashboard`)
+                    } else {
+                        // alert(res.msg)
                     }
+                } catch (err) {
+                    console.log(err);
                 }
             }
+        }
         else {
             navigate(`/Login`)
         }
@@ -147,34 +147,34 @@ const Coverlatter = () => {
     if (localStorage.getItem("editing_cover") == 'true') {
         edit_cover_letter()
         localStorage.setItem("editing_cover", 'false')
-      }
+    }
     function edit_cover_letter() {
-        if ('sender_contact_information_list' in localStorage ){
+        if ('sender_contact_information_list' in localStorage) {
             let sender_contact_information_list;
-        if (localStorage.getItem("sender_contact_information_list") === null || typeof localStorage.getItem("sender_contact_information_list") === 'undefined') {
-        sender_contact_information_list = [];
-        } else {
-            sender_contact_information_list = JSON.parse(localStorage.getItem("sender_contact_information_list"));
-            const Recipient_contact_information_list = JSON.parse(localStorage.getItem("Recipient_contact_information_list"));
-            const Letter_body_list = JSON.parse(localStorage.getItem("Letter_body_list"));
-            setState({
-                ...state,
-                Name: sender_contact_information_list['name'],
-                // LastName: sender_contact_information_list['LastName'],
-                Email: sender_contact_information_list['email'],
-                Address: sender_contact_information_list['address'],
-                Phone: sender_contact_information_list['phone'],
-                Titleto: Recipient_contact_information_list['title'],
-                Nameto: Recipient_contact_information_list['first_name'],
-                Jobtitleto: Recipient_contact_information_list['job_title'],
-                Companayto: Recipient_contact_information_list['company'],
-                Loctionto: Recipient_contact_information_list['location'],
-                Greetingto: Recipient_contact_information_list['greeting'],
-                textarea: Letter_body_list['body'],
-                fathfully: Letter_body_list['faitfully'],
-            });
-            localStorage.setItem('edit_this_cover','true')
-        }
+            if (localStorage.getItem("sender_contact_information_list") === null || typeof localStorage.getItem("sender_contact_information_list") === 'undefined') {
+                sender_contact_information_list = [];
+            } else {
+                sender_contact_information_list = JSON.parse(localStorage.getItem("sender_contact_information_list"));
+                const Recipient_contact_information_list = JSON.parse(localStorage.getItem("Recipient_contact_information_list"));
+                const Letter_body_list = JSON.parse(localStorage.getItem("Letter_body_list"));
+                setState({
+                    ...state,
+                    Name: sender_contact_information_list['name'],
+                    // LastName: sender_contact_information_list['LastName'],
+                    Email: sender_contact_information_list['email'],
+                    Address: sender_contact_information_list['address'],
+                    Phone: sender_contact_information_list['phone'],
+                    Titleto: Recipient_contact_information_list['title'],
+                    Nameto: Recipient_contact_information_list['first_name'],
+                    Jobtitleto: Recipient_contact_information_list['job_title'],
+                    Companayto: Recipient_contact_information_list['company'],
+                    Loctionto: Recipient_contact_information_list['location'],
+                    Greetingto: Recipient_contact_information_list['greeting'],
+                    textarea: Letter_body_list['body'],
+                    fathfully: Letter_body_list['faitfully'],
+                });
+                localStorage.setItem('edit_this_cover', 'true')
+            }
         }
     }
 
@@ -375,7 +375,7 @@ const Coverlatter = () => {
                     </Offcanvas.Body>
                 </Offcanvas>
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} >
                         <div className="rambag">
                             <div className={toggleState === 1 ? 'content active-content' : "content"}>
                                 <Row>
@@ -405,7 +405,7 @@ const Coverlatter = () => {
                                                 value={state.Email}
                                                 onChange={handleChange}
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Email">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Email">
                                                 Email
                                             </label>
                                             <p>e.g. wilson.j@gmail.com</p>
@@ -420,7 +420,7 @@ const Coverlatter = () => {
                                                 onChange={handleChange}
 
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Address">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Address">
                                                 Address
                                             </label>
                                             <p>e.g. San Francisco, CA</p>
@@ -439,7 +439,7 @@ const Coverlatter = () => {
                                                     }
                                                 }}
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Name">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Name">
                                                 Phone
                                             </label>
                                             <p>
@@ -447,28 +447,28 @@ const Coverlatter = () => {
                                             </p>
                                         </div>
                                     </Col>
-                                   
+
                                     <Col>
-                                    <div id="float-label">
-                                    <TextareaAutosize
-                      type="text"
-                      value={descc}
-                      cols="2"
-                      rows="10"
-                      onChange={(e) => setDescc(e.target.value)}
-                      className="des"
-                      id="descc"
-                      maxLength="200"
-                      // edited
-                      required
-                      style={{ paddingLeft: "10px" }}
-                    />
-                    <label htmlFor="descc"> Description</label>
-                    </div>
+                                        <div id="float-label">
+                                            <TextareaAutosize
+                                                type="text"
+                                                value={descc}
+                                                cols="2"
+                                                rows="10"
+                                                onChange={(e) => setDescc(e.target.value)}
+                                                className="des"
+                                                id="descc"
+                                                maxLength="200"
+                                                // edited
+                                                required
+                                                style={{ paddingLeft: "10px" }}
+                                            />
+                                            <label htmlFor="descc"> Description</label>
+                                        </div>
                                     </Col>
                                     <div className="tab-button">
                                         {/* <button className='button-left-cus' onClick={() => NexttoggleTab(4)}>Next</button> */}
-                                        <button className='button-right-cus-1 text-end-cus' onClick={() => toggleTab(2)}>next</button>
+                                        <button className='button-left-cus' onClick={() => toggleTab(2)}>next</button>
                                     </div>
                                 </Row>
                             </div>
@@ -480,12 +480,12 @@ const Coverlatter = () => {
                                     </Button></h3>
                                     <p>Make sure you enter the details correctly to avoid any awkward situations! You can leave the fields you're not sure about in blank.</p>
                                     <Col md={12}>
-                                        <div id="float-label">
+                                        {/* <div id="float-label">
 
 
-                                        </div>
+                                        </div> */}
                                     </Col>
-                                    <Col >
+                                    <Col className="scrool-bs">
                                         <div id="float-label" className="form-control border-0 .bg-transparent">
                                             <input type="text"
                                                 name="Titleto"
@@ -493,7 +493,7 @@ const Coverlatter = () => {
                                                 onChange={handleChange}
                                                 maxLength="4"
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Email">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Email">
                                                 Title
                                             </label>
                                             <p>e.g. Mr.</p>
@@ -507,7 +507,7 @@ const Coverlatter = () => {
                                                 onChange={handleChange}
 
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Email">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Email">
                                                 Name
                                             </label>
                                             <p>e.g. chloe</p>
@@ -521,7 +521,7 @@ const Coverlatter = () => {
                                                 onChange={handleChange}
 
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Email">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Email">
                                                 Job-title
                                             </label>
                                             <p>e.g. Executive Account Manager</p>
@@ -535,7 +535,7 @@ const Coverlatter = () => {
                                                 onChange={handleChange}
 
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Email">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Email">
                                                 company
                                             </label>
                                             <p>e.g. Sky Translations Ltd.</p>
@@ -549,13 +549,13 @@ const Coverlatter = () => {
                                                 onChange={handleChange}
 
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Email">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Email">
                                                 Address
                                             </label>
                                             <p>e.g. 543 NewYork Lane NewYork USA.</p>
                                         </div>
                                     </Col>
-                                 
+
                                     <Col >
                                         <div id="float-label" className="form-control border-0 .bg-transparent">
                                             <input type="text"
@@ -564,7 +564,7 @@ const Coverlatter = () => {
                                                 onChange={handleChange}
 
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Email">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Email">
                                                 Loction
                                             </label>
                                             <p>e.g. San Francisco, CA</p>
@@ -579,15 +579,19 @@ const Coverlatter = () => {
                                                 maxLength="50"
 
                                             />
-                                            <label  className={isActive ? "Active" : ""} htmlFor="Email">
+                                            <label className={isActive ? "Active" : ""} htmlFor="Email">
                                                 Greeting
                                             </label>
                                             <p>e.g. Dear Mr. Newman</p>
+                                            <div id="float-label">
+
+
+                                            </div>
                                         </div>
                                     </Col>
                                     <div className="tab-button">
                                         <button className='button-left-cus' onClick={() => toggleTab(1)}>prev</button>
-                                        <button className='button-right-cus' onClick={() => toggleTab(3)}>next</button>
+                                        <button className='button-left-cus' onClick={() => toggleTab(3)}>next</button>
                                     </div>
                                 </Row>
                             </div>
@@ -608,12 +612,12 @@ const Coverlatter = () => {
                                             maxLength="" id="" cols="70" rows="10">
                                             {state.textarea}
                                         </textarea>
-                                        <label  className={isActive ? "Active" : ""} htmlFor="Name">
+                                        <label className={isActive ? "Active" : ""} htmlFor="Name">
                                             written letter
                                         </label>
                                         <div className="tab-button mt-4">
                                             <button className='button-left-cus' onClick={() => toggleTab(2)}>prev</button>
-                                            <button className='button-right-cus' onClick={() => toggleTab(4)}>next</button>
+                                            <button className='button-left-cus' onClick={() => toggleTab(4)}>next</button>
                                         </div>
                                     </div>
                                 </Row>
@@ -637,13 +641,13 @@ const Coverlatter = () => {
 
                                         />
 
-                                        <label  className={isActive ? "Active" : ""} htmlFor="">
-                                            valediction
+                                        <label className={isActive ? "Active" : ""} htmlFor="">
+                                        Validation
                                         </label>
                                         <p>e.g Sincerely, or Sincerely yours</p>
                                         <div className="tab-button">
                                             <button className='button-left-cus' onClick={() => toggleTab(3)}>prev</button>
-                                            <button className='button-left-cus-5'  onClick={() => submit_cover_letter()}>SUBMIT</button>
+                                            <button className='button-left-cus-5' onClick={() => submit_cover_letter()}>SUBMIT</button>
                                         </div>
                                     </div>
                                 </Row>

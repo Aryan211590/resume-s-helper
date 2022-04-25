@@ -67,7 +67,10 @@ import { MdZoomOutMap } from "react-icons/md";
 import { set } from "react-hook-form";
 import { ConstructionOutlined } from "@mui/icons-material";
 import Experince from "./Experince";
+import { fontWeight } from "@mui/system";
 const Inputvalues = createContext();
+
+
 
 function SkillaForm({ addSkilla }) {
   const [value, setValue] = React.useState("");
@@ -129,7 +132,7 @@ const ResumeFunction = () => {
           localStorage.setItem("fjkshfkhsdlgsl", resJson.data.profile_pic);
         }
       }
-    } catch (err) {}
+    } catch (err) { }
   };
   // ========================================================
   // ajax api call
@@ -331,9 +334,8 @@ const ResumeFunction = () => {
         all_to_do[indices]["start"] =
           start.length > 0
             ? start
-            : `${
-                start.getMonth() + 1
-              }/${start.getDate()}/${start.getFullYear()}`;
+            : `${start.getMonth() + 1
+            }/${start.getDate()}/${start.getFullYear()}`;
         all_to_do[indices]["isChecked"] = isChecked;
         all_to_do[indices]["Last"] =
           Last.length > 0
@@ -366,6 +368,7 @@ const ResumeFunction = () => {
       NexttoggleTab(3);
     };
 
+
     return (
       <div>
         <label htmlFor="title" className="form-label">
@@ -386,7 +389,7 @@ const ResumeFunction = () => {
                   onChange={(e) => {
                     setTitle(e.target.value);
                   }}
-                  
+
                 />
                 <label htmlFor="Job title" className={isActive ? "Active" : ""}>
                   Job title / Position
@@ -402,7 +405,7 @@ const ResumeFunction = () => {
                   required
                   value={companyname}
                   onChange={(e) => setcompanyname(e.target.value)}
-                 
+
                 />
                 <label
                   htmlFor="companyname"
@@ -421,7 +424,7 @@ const ResumeFunction = () => {
                   required
                   value={Location}
                   onChange={(e) => setLocation(e.target.value)}
-             
+
                 />
                 <label htmlFor="Location" className={isActive ? "Active" : ""}>
                   Location
@@ -474,7 +477,7 @@ const ResumeFunction = () => {
                     setIsChecked(false);
                   }}
                   value={new Date(Last)}
-                  // style={{ border: "1px solid #ffff", width: "90%" }}
+                // style={{ border: "1px solid #ffff", width: "90%" }}
                 />
                 {/* <input
                   type="month"
@@ -513,8 +516,45 @@ const ResumeFunction = () => {
             </Col>
 
             <Col md={12} className="mb-4">
+            <div style={{ backgroundColor: "red", background: "#e8eff3", maxWidth: "67%" }}>
+                    <label htmlFor="">Description</label>
+
+                    <button data-qa="Editor-button-bold"  data-tm-event-action="Wysiwyg" data-tm-event-label="Bold" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL"><svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z" />
+                    </svg>
+                    </button>
+                    <button data-qa="Editor-button-italic" data-tm-event-action="Wysiwyg" data-tm-event-label="Italic" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-underline" data-tm-event-action="Wysiwyg" data-tm-event-label="Underline" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-insertUnorderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Unordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-insertOrderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Ordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-justifyLeft" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify left" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-justifyFull" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify full" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 21h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18V7H3v2zm0-6v2h18V3H3z" />
+                      </svg>
+                    </button>
+                  </div>
               <div id="float-label">
                 {/* <b>Description</b> */}
+
 
                 <TextareaAutosize
                   type="text"
@@ -529,9 +569,9 @@ const ResumeFunction = () => {
                   onChange={(e) => setAboutJob(e.target.value)}
                 />
 
-                <label htmlFor="AboutJob" className={isActive ? "Active" : ""}>
+                {/* <label htmlFor="AboutJob" className={isActive ? "Active" : ""}>
                   Job description
-                </label>
+                </label> */}
               </div>
             </Col>
           </Row>
@@ -618,7 +658,7 @@ const ResumeFunction = () => {
               <Col className="">
                 <div id="float-label">
                   <input
-                   
+
                     type="text"
                     value={schooll}
                     onChange={(e) => setschool(e.target.value)}
@@ -639,7 +679,7 @@ const ResumeFunction = () => {
               <Col className="">
                 <div id="float-label">
                   <input
-                   
+
                     type="text"
                     value={Locationnn}
                     onChange={(e) => setLocation(e.target.value)}
@@ -706,6 +746,42 @@ const ResumeFunction = () => {
 
               <Col md={12}>
                 <div className="mb-3">
+                  <div style={{ backgroundColor: "red", background: "#e8eff3", maxWidth: "67%" }}>
+                    <label htmlFor="">Description</label>
+
+                    <button data-qa="Editor-button-bold"  data-tm-event-action="Wysiwyg" data-tm-event-label="Bold" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL"><svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z" />
+                    </svg>
+                    </button>
+                    <button data-qa="Editor-button-italic" data-tm-event-action="Wysiwyg" data-tm-event-label="Italic" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-underline" data-tm-event-action="Wysiwyg" data-tm-event-label="Underline" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-insertUnorderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Unordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-insertOrderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Ordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-justifyLeft" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify left" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z" />
+                      </svg>
+                    </button>
+                    <button data-qa="Editor-button-justifyFull" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify full" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
+                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 21h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18V7H3v2zm0-6v2h18V3H3z" />
+                      </svg>
+                    </button>
+                  </div>
                   <div id="float-label">
                     <TextareaAutosize
                       type="text"
@@ -718,9 +794,9 @@ const ResumeFunction = () => {
                       maxLength="250"
                       // edited
                       required
-                      style={{ paddingLeft: "10px" }}
+
                     />
-                    <label htmlFor="descc">Education Description</label>
+                    {/* <label htmlFor="descc">Education Description</label> */}
                   </div>
                 </div>
               </Col>
@@ -1408,15 +1484,15 @@ const ResumeFunction = () => {
   };
   const [Rades, setRades] = useState(localStorage.getItem("Rades") === 'true' || undefined ? true : false);
   const toggleChangeRounded = () => {
-    if(Rades === false){
+    if (Rades === false) {
       setRades(true);
-     
+
       localStorage.setItem("Rades", true);
-    }else{
+    } else {
       setRades(false);
       localStorage.setItem("Rades", false);
     }
-   
+
   }
 
   // BackGorund Change  End=======================
@@ -1576,9 +1652,8 @@ const ResumeFunction = () => {
       title: title,
       companyname: companyname,
       Location: Location,
-      start: `${
-        start.getMonth() + 1
-      }/${start.getDate()}/${start.getFullYear()}`,
+      start: `${start.getMonth() + 1
+        }/${start.getDate()}/${start.getFullYear()}`,
       Last: `${Last.getMonth() + 1}/${Last.getDate()}/${Last.getFullYear()}`,
       isChecked: isChecked,
       AboutJob: AboutJob,
@@ -1779,6 +1854,22 @@ const ResumeFunction = () => {
     </div>,
   ];
 
+  const [bold, setbold] = useState(false);
+
+  console.log("bold")
+  function handlebold() {
+    setbold(true)
+    console.log("handlebold")
+
+    if (bold === false) {
+      setbold(true);
+
+    } else {
+      setbold(false);
+    }
+
+  }
+
 
 
 
@@ -1971,7 +2062,7 @@ const ResumeFunction = () => {
                                     name="Name"
                                     value={state.Name}
                                     onChange={handleChange}
-                                  
+
                                   />
                                   <label
                                     htmlFor="Name"
@@ -1988,7 +2079,7 @@ const ResumeFunction = () => {
                                     className="input-cus"
                                     value={state.LastName}
                                     onChange={handleChange}
-                                   
+
                                   />
                                   <label
                                     htmlFor="LastName"
@@ -2015,7 +2106,7 @@ const ResumeFunction = () => {
                                           : "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
                                       }
                                       className={
-                                        "d-defuk" +" "+ 
+                                        "d-defuk" + " " +
                                         (Rades === true
                                           ? " border-radius-50"
                                           : " border-radius-none")
@@ -2078,13 +2169,13 @@ const ResumeFunction = () => {
                                 <div className="switchround">
                                   <Form.Check>
                                     <label className="switch">
-                                      <input type="checkbox"  defaultChecked={Rades} onChange={() => toggleChangeRounded()}></input>
+                                      <input type="checkbox" defaultChecked={Rades} onChange={() => toggleChangeRounded()}></input>
                                       <span
                                         className="slider round"
                                         id="custom-switch"
-                                       
+
                                       ></span>
-                                      <p onClick={()=> toggleChangeRounded()} className="slider_name">
+                                      <p onClick={() => toggleChangeRounded()} className="slider_name">
                                         RoundPhoto
                                       </p>
                                     </label>
@@ -2100,7 +2191,7 @@ const ResumeFunction = () => {
                                 name="Occupation"
                                 value={state.Occupation}
                                 onChange={handleChange}
-                                
+
                               />
                               <label
                                 htmlFor="Occupation"
@@ -2150,8 +2241,7 @@ const ResumeFunction = () => {
                                 maxDate={new Date()}
                                 onChange={(date_pik) =>
                                   handleDateChange(
-                                    `${
-                                      date_pik.getMonth() + 1
+                                    `${date_pik.getMonth() + 1
                                     }/${date_pik.getDate()}/${date_pik.getFullYear()}`,
                                     "date"
                                   )
@@ -2203,7 +2293,7 @@ const ResumeFunction = () => {
                             <div id="float-label">
                               <div className="adjust">
                                 <input
-                                      type="text"
+                                  type="text"
                                   name="Address"
                                   value={state.Address}
                                   onChange={handleChange}
@@ -2237,7 +2327,7 @@ const ResumeFunction = () => {
                               className="form-control  border-0"
                             >
                               <input
-                               
+
                                 type="tel"
                                 name="Phone"
                                 value={state.Phone}
@@ -2298,7 +2388,43 @@ const ResumeFunction = () => {
 
                           {/* first end */}
                           <Col md={12} xs={12} className="my-3">
-                            {/* <label htmlFor="">Description</label>*/}
+                            <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                              <label htmlFor="">Description</label>
+
+                              <button data-qa="Editor-button-bold" onClick={handlebold} data-tm-event-action="Wysiwyg" data-tm-event-label="Bold" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL"><svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z" />
+                              </svg>
+                              </button>
+                              <button data-qa="Editor-button-italic" data-tm-event-action="Wysiwyg" data-tm-event-label="Italic" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z" />
+                                </svg>
+                              </button>
+                              <button data-qa="Editor-button-underline" data-tm-event-action="Wysiwyg" data-tm-event-label="Underline" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z" />
+                                </svg>
+                              </button>
+                              <button data-qa="Editor-button-insertUnorderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Unordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z" />
+                                </svg>
+                              </button>
+                              <button data-qa="Editor-button-insertOrderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Ordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
+                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z" />
+                                </svg>
+                              </button>
+                              <button data-qa="Editor-button-justifyLeft" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify left" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
+                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z" />
+                                </svg>
+                              </button>
+                              <button data-qa="Editor-button-justifyFull" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify full" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
+                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M3 21h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18V7H3v2zm0-6v2h18V3H3z" />
+                                </svg>
+                              </button>
+                            </div>
+
                             <div id="float-label">
                               <TextareaAutosize
                                 type="text"
@@ -2312,16 +2438,20 @@ const ResumeFunction = () => {
                                 // maxLength="300"
                                 maxLength="250"
                                 required
-                                style={{ paddingLeft: "10px",linHeight:'normal',
-                                paddingTop:'30px'}}
+                                // style={{ paddingLeft: "10px",linHeight:'normal',
+                                // paddingTop:'30px'}}
                                 // edited
+                                style={bold ? { fontWeight: "bold" } : { fontWeight: "normal" }}
+
                               />
-                              <label
+                              {/* <label
                                 htmlFor="Aboutus"
                                 className={isActive ? "Active" : ""}
-                              >
+                              > 
                                 Description
-                              </label>
+                                
+                                
+                              </label> */}
                               <p>e.g Description</p>
                             </div>
                           </Col>
@@ -2375,7 +2505,7 @@ const ResumeFunction = () => {
                               prev
                             </button>
                             {JSON.parse(localStorage.getItem("NextState")) ===
-                            7 ? (
+                              7 ? (
                               <button
                                 onClick={() => NexttoggleTab(7)}
                                 className="button-left-cus float-right"
@@ -2458,7 +2588,7 @@ const ResumeFunction = () => {
                               prev
                             </button>
                             {JSON.parse(localStorage.getItem("NextState")) ===
-                            7 ? (
+                              7 ? (
                               <button
                                 onClick={() => NexttoggleTab(7)}
                                 cl-ssName="b-tton-left=cus float=right"
@@ -2500,7 +2630,7 @@ const ResumeFunction = () => {
                             <Educationadd
                               addTodo2={addTodo2}
                               todos={todos}
-                              // onDelete={onDelete}
+                            // onDelete={onDelete}
                             />
                           </Col>
 
@@ -2512,7 +2642,7 @@ const ResumeFunction = () => {
                               prev
                             </button>
                             {JSON.parse(localStorage.getItem("NextState")) ===
-                            7 ? (
+                              7 ? (
                               <button
                                 onClick={() => NexttoggleTab(7)}
                                 cl-ssName="b-tton-left=cus float=right"
@@ -2607,7 +2737,7 @@ const ResumeFunction = () => {
                               prev
                             </button>
                             {JSON.parse(localStorage.getItem("NextState")) ===
-                            7 ? (
+                              7 ? (
                               <button
                                 onClick={() => NexttoggleTab(7)}
                                 clas-Name="but-on-left-cus float-right"
