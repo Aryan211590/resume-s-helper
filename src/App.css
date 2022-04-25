@@ -2135,7 +2135,7 @@ li.text-start-cus input[type="checkbox"] {
   /* right: 44%; */
   z-index: 99;
   border: none;
-  width: 27% !important;
+  width: 37% !important;
   position: fixed;
   display: flex;
   justify-content: space-between;

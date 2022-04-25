@@ -604,7 +604,11 @@ const Coverlatter = () => {
                                     </Button> </h3>
                                     <p>Explain why you're the right person for the job. Sum up your motivations, experience, and key skills in 3 or 4 short paragraphs.
                                     </p>
+
+
                                     <div id="float-label">
+                                        <div style={{ background: "#e8eff3", maxWidth: "82%" }} className={isActive ? "Active" : ""} htmlFor="Name">Written letter
+                                        </div>
 
                                         <textarea name="textarea"
                                             value={state.textarea}
@@ -612,9 +616,9 @@ const Coverlatter = () => {
                                             maxLength="" id="" cols="70" rows="10">
                                             {state.textarea}
                                         </textarea>
-                                        <label className={isActive ? "Active" : ""} htmlFor="Name">
+                                        {/* <label className={isActive ? "Active" : ""} htmlFor="Name">
                                             written letter
-                                        </label>
+                                        </label> */}
                                         <div className="tab-button mt-4">
                                             <button className='button-left-cus' onClick={() => toggleTab(2)}>prev</button>
                                             <button className='button-left-cus' onClick={() => toggleTab(4)}>next</button>
@@ -642,7 +646,7 @@ const Coverlatter = () => {
                                         />
 
                                         <label className={isActive ? "Active" : ""} htmlFor="">
-                                        Validation
+                                            Validation
                                         </label>
                                         <p>e.g Sincerely, or Sincerely yours</p>
                                         <div className="tab-button">
