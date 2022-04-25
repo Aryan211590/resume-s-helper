@@ -518,45 +518,29 @@ const ResumeFunction = () => {
               </div>
             </Col>
 
-            <Col md={12} className="mb-4">
-            <div style={{ backgroundColor: "red", background: "#e8eff3", maxWidth: "67%" }}>
-                    <label htmlFor="">Description</label>
+            <Col md={12} xs={12} className="my-3">
+                            <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                              <label htmlFor="">Description</label>
 
-                    
-                  </div>
-              <div id="float-label">
-                {/* <b>Description</b> */}
+                              
+                            </div>
 
-
-                {/* <TextareaAutosize
-                  type="text"
-                  name="AboutJob"
-                  className="des"
-                  cols="2"
-                  rows="15"
-                  maxLength="250"
-                  required
-                  id="descc"
-                  value={AboutJob}
-                  onChange={(e) => setAboutJob(e.target.value)}
-                /> */}
-                 <Editor
+                            <div id="float-label" style={{maxWidth:"67%"}}>
+                            <Editor
 	  
 	  toolbar={{
         options: ['inline',  'list','textAlign'],
-        inline: { inDropdown: false ,options: ['bold', 'italic', 'underline']   },
-        list: { inDropdown: false ,options:['ordered','unordered']},
-		textAlign:{inDropdown: false ,options:['left','justify']}
+        inline: { isDropdown: false ,options: ['bold', 'italic', 'underline']   },
+        list: { isDropdown: false ,options:['ordered','unordered']},
+		textAlign:{isDropdown: false ,options:['left','justify']}
         
     }}
-         wrapperStyle={{ width: 500, border: "1px solid black" }}
+         wrapperStyle={{ width: 327, border: "1px solid black",backgroundColor:"#e8eff3" }}
       />
-
-                {/* <label htmlFor="AboutJob" className={isActive ? "Active" : ""}>
-                  Job description
-                </label> */}
-              </div>
-            </Col>
+                             
+                              <p>e.g Description</p>
+                            </div>
+                          </Col>
           </Row>
           <button className="mb-4 button-left-cus float-right" type="submit">
             SAVE
@@ -726,43 +710,77 @@ const ResumeFunction = () => {
                   <p>e.g. Mar 2017</p>
                 </div>
               </Col>
+              <Col md={12} xs={12} className="my-3">
+                            <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                              <label htmlFor="">Description</label>
 
-              <Col md={12}>
-                <div className="mb-3">
-                  <div style={{ backgroundColor: "red", background: "#e8eff3", maxWidth: "67%" }}>
-                    <label htmlFor="">Description</label>
+                              
+                            </div>
 
-                   
-                  </div>
-                  <div id="float-label">
-                  <Editor
+                            <div id="float-label" style={{maxWidth:"67%"}}>
+                            <Editor
 	  
 	  toolbar={{
         options: ['inline',  'list','textAlign'],
-        inline: { inDropdown: false ,options: ['bold', 'italic', 'underline']   },
-        list: { inDropdown: false ,options:['ordered','unordered']},
-		textAlign:{inDropdown: false ,options:['left','justify']}
+        inline: { isDropdown: false ,options: ['bold', 'italic', 'underline']   },
+        list: { isDropdown: false ,options:['ordered','unordered']},
+		textAlign:{isDropdown: false ,options:['left','justify']}
         
     }}
-         wrapperStyle={{ width: 500, border: "1px solid black" }}
+         wrapperStyle={{ width: 327, border: "1px solid black",backgroundColor:"#e8eff3" }}
       />
-                    {/* <TextareaAutosize
-                      type="text"
-                      value={descc}
-                      cols="2"
-                      rows="10"
-                      onChange={(e) => setDescc(e.target.value)}
-                      className="des"
-                      id="descc"
-                      maxLength="250"
-                      // edited
-                      required
+                              {/* <TextareaAutosize
+                                type="text"
+                                className="des"
+                                cols="5"
+                                rows="1   <Col md={12} xs={12} className="my-3">
+                            <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                              <label htmlFor="">Description</label>
 
-                    /> */}
-                    {/* <label htmlFor="descc">Education Description</label> */}
-                  </div>
-                </div>
-              </Col>
+                              
+                            </div>
+
+                            <div id="float-label" style={{maxWidth:"67%"}}>
+                            <Editor
+	  
+	  toolbar={{
+        options: ['inline',  'list','textAlign'],
+        inline: { isDropdown: false ,options: ['bold', 'italic', 'underline']   },
+        list: { isDropdown: false ,options:['ordered','unordered']},
+		textAlign:{isDropdown: false ,options:['left','justify']}
+        
+    }}
+         wrapperStyle={{ width: 327, border: "1px solid black",backgroundColor:"#e8eff3" }}
+      />
+                              {/* <TextareaAutosize
+                                type="text"
+                                className="des"
+                                cols="5"
+                                rows="15"
+                                id="descc"
+                                name="about_us"
+                                value={state.about_us}
+                                onChange={handleChange}
+                                // maxLength="300"
+                                maxLength="250"
+                                required
+                                // style={{ paddingLeft: "10px",linHeight:'normal',
+                                // paddingTop:'30px'}}
+                                // edited
+                                style={bold ? { fontWeight: "bold" } : { fontWeight: "normal" }}
+
+                              /> */}
+                              {/* <label
+                                htmlFor="Aboutus"
+                                className={isActive ? "Active" : ""}
+                              > 
+                                Description
+                                
+                                
+                              </label> */}
+                              <p>e.g Description</p>
+                            </div>
+                          </Col>
               <Col>
                 <Button
                   className="mb-4  button-left-cus button-left-cus float-right jss4313 MuiButton-outlinedSizeSmall-4329"
@@ -2369,32 +2387,7 @@ const ResumeFunction = () => {
     }}
          wrapperStyle={{ width: 327, border: "1px solid black",backgroundColor:"#e8eff3" }}
       />
-                              {/* <TextareaAutosize
-                                type="text"
-                                className="des"
-                                cols="5"
-                                rows="15"
-                                id="descc"
-                                name="about_us"
-                                value={state.about_us}
-                                onChange={handleChange}
-                                // maxLength="300"
-                                maxLength="250"
-                                required
-                                // style={{ paddingLeft: "10px",linHeight:'normal',
-                                // paddingTop:'30px'}}
-                                // edited
-                                style={bold ? { fontWeight: "bold" } : { fontWeight: "normal" }}
-
-                              /> */}
-                              {/* <label
-                                htmlFor="Aboutus"
-                                className={isActive ? "Active" : ""}
-                              > 
-                                Description
-                                
-                                
-                              </label> */}
+                             
                               <p>e.g Description</p>
                             </div>
                           </Col>
