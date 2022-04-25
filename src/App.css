@@ -2142,6 +2142,13 @@ li.text-start-cus input[type="checkbox"] {
   padding: 19px 21px;
 }
 
+
+@media screen and (min-width: 1600px) {
+  .tab-button {
+    width: 27% !important;
+  }
+}
+
 button.button-left-cus.border-0.text-dark-cus.bg-light {
   font-size: 17px;
   color: #48b4fc;

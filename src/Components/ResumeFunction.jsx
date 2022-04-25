@@ -68,6 +68,9 @@ import { set } from "react-hook-form";
 import { ConstructionOutlined } from "@mui/icons-material";
 import Experince from "./Experince";
 import { fontWeight } from "@mui/system";
+
+import { Editor } from "react-draft-wysiwyg";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 const Inputvalues = createContext();
 
 
@@ -519,44 +522,13 @@ const ResumeFunction = () => {
             <div style={{ backgroundColor: "red", background: "#e8eff3", maxWidth: "67%" }}>
                     <label htmlFor="">Description</label>
 
-                    <button data-qa="Editor-button-bold"  data-tm-event-action="Wysiwyg" data-tm-event-label="Bold" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL"><svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z" />
-                    </svg>
-                    </button>
-                    <button data-qa="Editor-button-italic" data-tm-event-action="Wysiwyg" data-tm-event-label="Italic" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-underline" data-tm-event-action="Wysiwyg" data-tm-event-label="Underline" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-insertUnorderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Unordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-insertOrderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Ordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-justifyLeft" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify left" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-justifyFull" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify full" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M3 21h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18V7H3v2zm0-6v2h18V3H3z" />
-                      </svg>
-                    </button>
+                    
                   </div>
               <div id="float-label">
                 {/* <b>Description</b> */}
 
 
-                <TextareaAutosize
+                {/* <TextareaAutosize
                   type="text"
                   name="AboutJob"
                   className="des"
@@ -567,7 +539,18 @@ const ResumeFunction = () => {
                   id="descc"
                   value={AboutJob}
                   onChange={(e) => setAboutJob(e.target.value)}
-                />
+                /> */}
+                 <Editor
+	  
+	  toolbar={{
+        options: ['inline',  'list','textAlign'],
+        inline: { inDropdown: false ,options: ['bold', 'italic', 'underline']   },
+        list: { inDropdown: false ,options:['ordered','unordered']},
+		textAlign:{inDropdown: false ,options:['left','justify']}
+        
+    }}
+         wrapperStyle={{ width: 500, border: "1px solid black" }}
+      />
 
                 {/* <label htmlFor="AboutJob" className={isActive ? "Active" : ""}>
                   Job description
@@ -749,41 +732,21 @@ const ResumeFunction = () => {
                   <div style={{ backgroundColor: "red", background: "#e8eff3", maxWidth: "67%" }}>
                     <label htmlFor="">Description</label>
 
-                    <button data-qa="Editor-button-bold"  data-tm-event-action="Wysiwyg" data-tm-event-label="Bold" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL"><svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z" />
-                    </svg>
-                    </button>
-                    <button data-qa="Editor-button-italic" data-tm-event-action="Wysiwyg" data-tm-event-label="Italic" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-underline" data-tm-event-action="Wysiwyg" data-tm-event-label="Underline" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-insertUnorderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Unordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-insertOrderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Ordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-justifyLeft" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify left" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z" />
-                      </svg>
-                    </button>
-                    <button data-qa="Editor-button-justifyFull" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify full" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
-                      <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M3 21h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18V7H3v2zm0-6v2h18V3H3z" />
-                      </svg>
-                    </button>
+                   
                   </div>
                   <div id="float-label">
-                    <TextareaAutosize
+                  <Editor
+	  
+	  toolbar={{
+        options: ['inline',  'list','textAlign'],
+        inline: { inDropdown: false ,options: ['bold', 'italic', 'underline']   },
+        list: { inDropdown: false ,options:['ordered','unordered']},
+		textAlign:{inDropdown: false ,options:['left','justify']}
+        
+    }}
+         wrapperStyle={{ width: 500, border: "1px solid black" }}
+      />
+                    {/* <TextareaAutosize
                       type="text"
                       value={descc}
                       cols="2"
@@ -795,7 +758,7 @@ const ResumeFunction = () => {
                       // edited
                       required
 
-                    />
+                    /> */}
                     {/* <label htmlFor="descc">Education Description</label> */}
                   </div>
                 </div>
@@ -2391,42 +2354,22 @@ const ResumeFunction = () => {
                             <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
                               <label htmlFor="">Description</label>
 
-                              <button data-qa="Editor-button-bold" onClick={handlebold} data-tm-event-action="Wysiwyg" data-tm-event-label="Bold" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL"><svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z" />
-                              </svg>
-                              </button>
-                              <button data-qa="Editor-button-italic" data-tm-event-action="Wysiwyg" data-tm-event-label="Italic" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z" />
-                                </svg>
-                              </button>
-                              <button data-qa="Editor-button-underline" data-tm-event-action="Wysiwyg" data-tm-event-label="Underline" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                  <path d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z" />
-                                </svg>
-                              </button>
-                              <button data-qa="Editor-button-insertUnorderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Unordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                  <path d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z" />
-                                </svg>
-                              </button>
-                              <button data-qa="Editor-button-insertOrderedList" data-tm-event-action="Wysiwyg" data-tm-event-label="Ordered list" data-tm-event-category="Resumes editor" data-tm-type="event" tabIndex={-1} className="sc-fo1jmi-99 dmJJNL">
-                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                  <path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z" />
-                                </svg>
-                              </button>
-                              <button data-qa="Editor-button-justifyLeft" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify left" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
-                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                  <path d="M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z" />
-                                </svg>
-                              </button>
-                              <button data-qa="Editor-button-justifyFull" data-tm-event-action="Wysiwyg" data-tm-event-label="Justify full" data-tm-event-category="Resumes editor" data-tm-type="event" className="sc-fo1jmi-99 dmJJNL">
-                                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                  <path d="M3 21h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18V7H3v2zm0-6v2h18V3H3z" />
-                                </svg>
-                              </button>
+                              
                             </div>
 
-                            <div id="float-label">
-                              <TextareaAutosize
+                            <div id="float-label" style={{maxWidth:"67%"}}>
+                            <Editor
+	  
+	  toolbar={{
+        options: ['inline',  'list','textAlign'],
+        inline: { isDropdown: false ,options: ['bold', 'italic', 'underline']   },
+        list: { isDropdown: false ,options:['ordered','unordered']},
+		textAlign:{isDropdown: false ,options:['left','justify']}
+        
+    }}
+         wrapperStyle={{ width: 327, border: "1px solid black",backgroundColor:"#e8eff3" }}
+      />
+                              {/* <TextareaAutosize
                                 type="text"
                                 className="des"
                                 cols="5"
@@ -2443,7 +2386,7 @@ const ResumeFunction = () => {
                                 // edited
                                 style={bold ? { fontWeight: "bold" } : { fontWeight: "normal" }}
 
-                              />
+                              /> */}
                               {/* <label
                                 htmlFor="Aboutus"
                                 className={isActive ? "Active" : ""}

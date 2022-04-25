@@ -448,24 +448,7 @@ const Coverlatter = () => {
                                         </div>
                                     </Col>
 
-                                    <Col>
-                                        <div id="float-label">
-                                            <TextareaAutosize
-                                                type="text"
-                                                value={descc}
-                                                cols="2"
-                                                rows="10"
-                                                onChange={(e) => setDescc(e.target.value)}
-                                                className="des"
-                                                id="descc"
-                                                maxLength="200"
-                                                // edited
-                                                required
-                                                style={{ paddingLeft: "10px" }}
-                                            />
-                                            <label htmlFor="descc"> Description</label>
-                                        </div>
-                                    </Col>
+                                   
                                     <div className="tab-button">
                                         {/* <button className='button-left-cus' onClick={() => NexttoggleTab(4)}>Next</button> */}
                                         <button className='button-left-cus' onClick={() => toggleTab(2)}>next</button>
