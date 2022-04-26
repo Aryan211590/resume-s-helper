@@ -54,6 +54,22 @@
     border-radius: 25px !important;
 }
 
+@media only screen and (max-width: 600px) {
+    #professionSearchButton {
+        float: left;
+        background: #FF514E;
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        height: 50%;
+        padding: 15px 10px;
+        flex-basis: 80px;
+        margin: 0 0 0 16px;
+        width: 80px;
+        border-radius: 25px !important;
+    }
+  }
+
 .why {
     width: 100%;
     float: left;

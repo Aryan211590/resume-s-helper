@@ -93,7 +93,7 @@ export const PlanPremium  = () => {
                   <h3>Choose the format of your CV</h3>
                   <p>Download into the format you want including PDF and TXT (DOC files coming soon).</p>
                 </Col>
-                <Col sm={6}>
+                <Col sm={6} >
                   <img src={s7} alt=""  />
                   </Col>
               </Row>
@@ -111,12 +111,12 @@ export const PlanPremium  = () => {
          </Col>
          <Col sm={6} className='mt-4'>
               <Row>
-                <Col sm={6}>
+                <Col sm={6} >
                   <h3>Find jobs (and start applying!)</h3>
                   <p>Use our database to find jobs that match your profile and start lining up interviews!</p>
                 </Col>
-                <Col sm={6}>
-                <img src={s9} alt=""  />
+                <Col sm={6}  >
+                <img src={s9} alt=""   />
                   </Col>
               </Row>
          </Col>
@@ -126,7 +126,7 @@ export const PlanPremium  = () => {
                   <h3>Personalise your CV</h3>
                   <p>Choose from a library of proven templates and change the colour, font, and format to make it your own.</p>
                 </Col>
-                <Col sm={6}>
+                <Col sm={6}  >
                 <img src={s10} alt=""  />
                   </Col>
               </Row>

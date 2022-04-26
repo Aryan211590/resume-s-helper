@@ -55,7 +55,7 @@ export const PlanPremium = () => {
                     Use our database to find jobs that match your profile and start lining up interviews!
                     </p>
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} style={{marginTop:"20px"}}>
                     <img src={s9} alt="" />
                   </Col>
                 </Row>
@@ -68,7 +68,7 @@ export const PlanPremium = () => {
                     Choose from a library of proven templates and change the colour, font, and format to make it your own.
                     </p>
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} style={{marginTop:"20px"}}>
                     <img src={s10} alt="" />
                   </Col>
                 </Row>

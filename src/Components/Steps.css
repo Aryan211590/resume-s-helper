@@ -172,6 +172,12 @@ li {
     padding-bottom: 30px;
 
 }
+@media only screen and (max-width: 600px) {
+    .ladu {
+      width:65%;
+      margin:10px;
+    }
+  }
 
 .ladu .tabs {
     width: 10%;
