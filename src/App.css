@@ -420,6 +420,12 @@ button#ThemeButton {
   position: relative;
 }
 
+@media only screen and (max-width: 600px){
+  button#ThemeButton {
+    width: 125px;
+  }
+}
+
 .InnerButton {
   width: 22px !important;
   margin-top: 5px;
@@ -427,6 +433,13 @@ button#ThemeButton {
   background-color: #81f6dc;
   border-radius: 50%;
 }
+@media only screen and (max-width: 600px){
+  .InnerButton{
+    width: 69px !important;
+    border-radius: 20%;
+  }
+}
+
 
 svg#down\ icons {
   position: absolute;
@@ -435,6 +448,13 @@ svg#down\ icons {
   left: 40px;
   font-weight: 600;
   font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+  svg#down\ icons{
+    right: 11px;
+    left: 92px;
+  }
 }
 
 .carousel.slide.carousel-dark {
@@ -1362,6 +1382,8 @@ h5 {
   /* max-height: 265px;
   min-height: 204px; */
 }
+
+
 
 h1:empty:not(:focus)::before {
   content: attr(data-placeholder);
@@ -3004,6 +3026,12 @@ section.work-experience {
 .template__johannesburg__main .template__section__date {
   font-style: italic;
 }
+@media only screen and (min-device-width: 768px) {
+  .template__johannesburg__main .template__section__company,
+  .template__johannesburg__main .template__section__college{
+    font-style: normal;
+  }
+}
 
 .template__classical__main .template__section__date {
   order: 4;
@@ -3506,11 +3534,13 @@ button.thisiss:hover {
 button.thisissss {
   color: #5a5e61;
   width: 137px;
+  /* width: 123px; */
   border: none !important;
   margin: 0 16px 0 8px !important;
+  /* margin: 5px -3px 0 8px !important; */
   padding: 9px 12px !important;
   min-width: 50px !important;
-  border-radius: 0px !important;
+  border-radius: 4px !important;
   background-color: #d9dde0 !important;
   height: 41px;
   border: none;
@@ -3518,6 +3548,21 @@ button.thisissss {
   /* padding: 10px 3px; */
   background: #d9dde0;
 }
+
+@media only screen and (max-width: 600px){
+  button.thisissss {
+    width:123px;
+    margin: 5px -3px 0 8px !important;
+  }
+}
+
+/* .InnerButton {
+  width: 69px !important;
+  margin-top: 5px;
+  height: 22px !important;
+  background-color: #81f6dc;
+  border-radius: 20%;
+} */
 
 /* button.thisissss:hover {
   color: #5a5e61;
@@ -3996,6 +4041,11 @@ display: none;
   fill: rgb(90, 94, 97);
   display: flex;
 }
+@media only screen and (max-width: 600px){
+  .kQZVGP {
+    width:"150px"
+  }
+}
 
 button {
   background: none;
@@ -4230,14 +4280,70 @@ input.react-date-picker__inputGroup__input.react-date-picker__inputGroup__year {
 p.dVMeTp svg {
   margin-right: 10px;
 }
-
+/* 
 .offcanvas-body {
-  /* margin: 0px auto !important; */
+  margin: 0px auto !important;
   flex-grow: 1;
   padding: 1rem 1rem;
-  overflow-y: auto;
-}
+  overflow-y: scroll !important;
+  display:flex !important;
+  flex-direction:column ;
+} */
 
+/* .offcanvas-body {
+  display: flexbox;
+  width: 100%;
+  overflow:visible;
+  height: 100%;
+  
+}
+.offcanvas-body::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 255, 255); or add it to the track
+}
+.offcanvas-body::-webkit-scrollbar-thumb {
+  background: #000;
+} */
+
+/* .offcanvas-body{
+  overflow: scroll;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    height: calc((96vh - 136px) - 3px);
+    box-sizing: border-box;
+    overflow-x:hidden;
+    overflow: visible auto;
+    float: left;
+    min-height: 100px !important;
+} */
+.offcanvas-body {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  bottom: 10px;
+  right: 0;
+  height: 90%;
+  width: 95%;
+  padding: 30px; 
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display:grid;
+}
+.offcanvas-body::-webkit-scrollbar {
+  width: 10px;
+}
+.offcanvas-body::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.offcanvas-body::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #c5c2c2; 
+}
 /* @page{
   size: landscape;
 } */
@@ -4319,7 +4425,7 @@ input.react-date-picker__inputGroup__input.react-date-picker__inputGroup__day.re
 }
 
 .table-shadow {
-  padding: 40px !important;
+  /* padding: 40px !important; */
   background: white !important;
   border: none !important;
   transform-origin: 0px 0px !important;
@@ -4645,4 +4751,16 @@ input:checked + .slider:before {
 [data-tm-event-action] :not([data-tm-event-action]) {
   pointer-events: none;
 }
+
+.zoom{
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+ 
+}
+
 

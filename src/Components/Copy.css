@@ -17,6 +17,15 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 600px){
+    .maindsdasd {
+        width: 100%;
+        float: left;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
 .buttos {
     width: 100%;
     float: left;
@@ -48,6 +57,12 @@ button.thisiss {
     border-top-right-radius: 3px !important; */
     color: #5a5e61;
 
+}
+@media only screen and (max-width: 600px) {
+    button.thisiss{
+        border-radius: 4px !important;
+        margin-left: 2px;
+    }
 }
 /* button.thisissss {
     height: 45px;
@@ -85,6 +100,16 @@ button.thisisss {
     border-bottom-right-radius: 0px !important;
     border-top-right-radius: 0px !important;
     color: #5a5e61;
+}
+@media only screen and (max-width: 600px){
+    button.thisisss{
+        margin-left: 2px;
+        margin-right: 1px;
+        border-bottom-left-radius: 4px !important;
+        border-top-left-radius: 4px !important;
+        border-bottom-right-radius: 4px !important;
+        border-top-right-radius: 4px !important;
+    }
 }
 /* 
 .sc-1mr94c0-0.huAYAM {

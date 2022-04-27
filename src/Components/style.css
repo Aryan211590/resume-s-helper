@@ -38,9 +38,23 @@ body {
   /* margin: 100px auto; */
 }
 
+@media only screen and (max-width: 600px){
+  .resume{
+    width: 100%;
+    height:auto;
+    display: flex;
+  }
+}
+
 .resume .resume_left {
   width: 280px;
   background: #585c68;
+}
+
+@media only screen and (max-width: 600px){
+  .resume .resume_left {
+    width: 50%;
+  }
 }
 .resume .resume_left .resume_profile {
   position: relative;
@@ -56,8 +70,13 @@ body {
 .NAME {
   font-weight: 700;
   font-size: 22px;
-  filter: drop-shadow(2px 3px 0 black);
+  /* filter: drop-shadow(2px 3px 0 black); */
   text-transform: uppercase;
+}
+@media only screen and (max-width: 600px){
+  .NAME{
+    font-size: 15px;
+  }
 }
 .resume .resume_left .resume_profile img alt {
   font-size: 10px;
@@ -90,6 +109,8 @@ body {
   border-bottom-left-radius: 3px;
 }
 
+
+
 .resume .resume_left .resume_item:last-child {
   border-bottom: 0px solid #ffb226;
 }
@@ -98,6 +119,13 @@ body {
   display: -webkit-box;
   align-items: center;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .resume .resume_left ul li{
+    width:25%;
+  
+  }
 }
 .resume .resume_left ul li last-child {
   margin-bottom: 0;
@@ -115,15 +143,34 @@ body {
   position: relative;
   left: -10%;
 }
+
+@media only screen and (max-width: 600px){
+  .resume .resume_left ul li .icon{
+    width: 35px;
+    left: -8%;
+    margin-left: -38px;
+    font-size: 16;
+    left:-70%;
+   
+  }
+}
 .resume .icon i {
   position: absolute;
   top: 25%;
   left: 25%;
 }
+
+
 .resume .resume_left ul li .data {
   color: azure;
 }
 
+@media only screen and (max-width: 600px){
+  .resume .resume_left ul li .data{
+    /* word-break:break-all; */
+    font-size: 10px;
+  }
+}
 .resume .resume_left .resume_skills ul li {
   color: #fff;
   justify-content: space-between;
@@ -132,6 +179,8 @@ body {
 .resume .resume_left .resume_skills ul li .skill_name {
   width: 25%;
 }
+
+
 /* .resume .resume_left .resume_skills ul li .skill_progress{
     width: 70%;
     margin: 0 5px;
@@ -156,7 +205,11 @@ body {
   background: #fff;
   padding: 25px;
 }
-
+@media only screen and (max-width: 600px){
+  .resume .resume_right{
+    width:50%;
+  }
+}
 .resume .resume_right .bold {
   color: #cc6600;
   font-weight: 700;
@@ -331,6 +384,12 @@ p.enlarge {
   padding-right: 6.5em;
   line-height: 24px;
 }
+@media only screen and (max-width: 600px){
+  p.enlarge {
+    font-size: 100%;
+    padding-right: 1.5em;
+  }
+}
 
 p.enlarge span {
   color: #000;
@@ -431,6 +490,7 @@ a#pdf:hover {
 .yui-gf div.first {
   width: 12.3%;
 }
+
 #theme_detalis:hover {
   color: #000 !important;
 }

@@ -339,7 +339,7 @@ const Coverlatter = () => {
 
             <Resumeheader />
             <Container>
-                <Offcanvas placement="bottom" show={show} onHide={handleClose}>
+                <Offcanvas  placement="bottom" show={show} onHide={handleClose}>
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title>Cover Latter</Offcanvas.Title>
                     </Offcanvas.Header>

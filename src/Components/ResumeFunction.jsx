@@ -68,6 +68,10 @@ import { set } from "react-hook-form";
 import { ConstructionOutlined } from "@mui/icons-material";
 import Experince from "./Experince";
 import { fontWeight } from "@mui/system";
+// import Textedito from "./Textedito";
+
+import ReactQuill from "react-quill"
+import 'react-quill/dist/quill.snow.css'
 
 import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
@@ -300,6 +304,8 @@ const ResumeFunction = () => {
     const [AboutJob, setAboutJob] = useState("your decription");
     const indecies = parseInt(localStorage.getItem("experience_index"));
 
+
+
     var index_number = parseInt(localStorage.getItem("experience_index"));
     if (index_number !== -1 && index_number + 1) {
       setTitle(todoos[index_number]["title"]);
@@ -519,28 +525,35 @@ const ResumeFunction = () => {
             </Col>
 
             <Col md={12} xs={12} className="my-3">
-                            <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
-                              <label htmlFor="">Description</label>
+              {/* <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                <label htmlFor="">Description</label>
 
-                              
-                            </div>
 
-                            <div id="float-label" style={{maxWidth:"67%"}}>
-                            <Editor
-	  
-	  toolbar={{
-        options: ['inline',  'list','textAlign'],
-        inline: { isDropdown: false ,options: ['bold', 'italic', 'underline']   },
-        list: { isDropdown: false ,options:['ordered','unordered']},
-		textAlign:{isDropdown: false ,options:['left','justify']}
-        
-    }}
-         wrapperStyle={{ width: 327, border: "1px solid black",backgroundColor:"#e8eff3" }}
-      />
-                             
-                              <p>e.g Description</p>
-                            </div>
-                          </Col>
+              </div> */}
+
+              <div id="float-label" style={{ maxWidth: "67%" }}>
+                <Editor
+
+                  toolbar={{
+                    options: ['inline', 'list', 'textAlign'],
+                    inline: { isDropdown: false, options: ['bold', 'italic', 'underline'] },
+                    list: { isDropdown: false, options: ['ordered', 'unordered'] },
+                    textAlign: { isDropdown: false, options: ['left', 'justify'] },
+                    editorOptions: { maxLength: 250 },
+
+                  }}
+                  wrapperStyle={{ width: 327, backgroundColor: "#e8eff3" }}
+                />
+
+                <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                  <label htmlFor=""> e.g Description</label>
+
+
+                </div>
+
+                {/* <p>e.g Description</p> */}
+              </div>
+            </Col>
           </Row>
           <button className="mb-4 button-left-cus float-right" type="submit">
             SAVE
@@ -687,13 +700,6 @@ const ResumeFunction = () => {
               </Col>
               <Col className="">
                 <div id="float-label">
-                  {/* <input
-                    type="date"
-                    value={LDate}
-                    onChange={(e) => setLdate(e.target.value)}
-                    className="form-control"
-                    id="descc"
-                  /> */}
 
                   <DatePicker
                     required
@@ -711,25 +717,34 @@ const ResumeFunction = () => {
                 </div>
               </Col>
               <Col md={12} xs={12} className="my-3">
-                            <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
-                              <label htmlFor="">Description</label>
+                {/* <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                  <label htmlFor="">Description</label>
 
-                              
-                            </div>
 
-                            <div id="float-label" style={{maxWidth:"67%"}}>
-                            <Editor
-	  
-	  toolbar={{
-        options: ['inline',  'list','textAlign'],
-        inline: { isDropdown: false ,options: ['bold', 'italic', 'underline']   },
-        list: { isDropdown: false ,options:['ordered','unordered']},
-		textAlign:{isDropdown: false ,options:['left','justify']}
-        
-    }}
-         wrapperStyle={{ width: 327, border: "1px solid black",backgroundColor:"#e8eff3" }}
-      />
-                              {/* <TextareaAutosize
+                </div> */}
+
+                <div id="float-label" style={{ maxWidth: "67%" }}>
+                  <Editor
+
+                    value={state.about_us}
+                    onChange={handleChange}
+
+                    toolbar={{
+                      options: ['inline', 'list', 'textAlign'],
+                      inline: { isDropdown: false, options: ['bold', 'italic', 'underline'] },
+                      list: { isDropdown: false, options: ['ordered', 'unordered'] },
+                      textAlign: { isDropdown: false, options: ['left', 'justify'] }
+
+                    }}
+                    wrapperStyle={{ width: 327, backgroundColor: "#e8eff3" }}
+                  />
+                  <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                    <label htmlFor=""> e.g Description</label>
+
+
+                  </div>
+
+                  {/* <TextareaAutosize
                                 type="text"
                                 className="des"
                                 cols="5"
@@ -770,7 +785,7 @@ const ResumeFunction = () => {
                                 style={bold ? { fontWeight: "bold" } : { fontWeight: "normal" }}
 
                               /> */}
-                              {/* <label
+                  {/* <label
                                 htmlFor="Aboutus"
                                 className={isActive ? "Active" : ""}
                               > 
@@ -778,9 +793,9 @@ const ResumeFunction = () => {
                                 
                                 
                               </label> */}
-                              <p>e.g Description</p>
-                            </div>
-                          </Col>
+                  {/* <p>e.g Description</p> */}
+                </div>
+              </Col>
               <Col>
                 <Button
                   className="mb-4  button-left-cus button-left-cus float-right jss4313 MuiButton-outlinedSizeSmall-4329"
@@ -1188,6 +1203,8 @@ const ResumeFunction = () => {
   function handleChange(evt) {
     const value = evt.target.value;
 
+    console.log(value, "value")
+
     setState({
       ...state,
       [evt.target.name]: value,
@@ -1304,7 +1321,7 @@ const ResumeFunction = () => {
     if (evt.target.name == "start") {
       start_temp = value;
     } else {
-      start_temp = state.Start;
+      start_temp = state.start;
     }
     let Last_temp;
     if (evt.target.name == "Last") {
@@ -1673,166 +1690,171 @@ const ResumeFunction = () => {
   };
 
   const items = [
-    <div className="item" data-value="1">
-      <li
-        className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(1)}
-      >
-        <img
-          src={temp1}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
-    <div className="item" data-value="2">
-      <li
-        className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(2)}
-      >
-        <img
-          src={template2}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
-    <div className="item" data-value="3">
-      <li
-        className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(3)}
-      >
-        <img
-          src={template3}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
-    <div className="item" data-value="4">
-      <li
-        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(4)}
-      >
-        <img
-          src={template4}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
-    <div className="item" data-value="5">
-      <li
-        className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(5)}
-      >
-        <img
-          src={template5}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
-    <div className="item" data-value="1">
-      <li
-        className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(1)}
-      >
-        <img
-          src={temp1}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
-    <div className="item" data-value="2">
-      <li
-        className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(2)}
-      >
-        <img
-          src={template2}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
-    <div className="item" data-value="3">
-      <li
-        className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(3)}
-      >
-        <img
-          src={template3}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
-    <div className="item" data-value="4">
-      <li
-        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(4)}
-      >
-        <img
-          src={template4}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
-    <div className="item" data-value="5">
-      <li
-        className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(5)}
-      >
-        <img
-          src={template5}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>,
+    
+      <div class="carousel-col">
+        <div className="item" data-value="1">
+          <li
+            className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(1)}
+          >
+            <img
+              src={temp1}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        
+        </div>,
+        <div className="item" data-value="2">
+          <li
+            className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(2)}
+          >
+            <img
+              src={template2}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        </div>,
+        <div className="item" data-value="3">
+          <li
+            className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(3)}
+          >
+            <img
+              src={template3}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        </div>,
+        <div className="item" data-value="4">
+          <li
+            className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(4)}
+          >
+            <img
+              src={template4}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        </div>,
+        <div className="item" data-value="5">
+          <li
+            className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(5)}
+          >
+            <img
+              src={template5}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        </div>,
+        <div className="item" data-value="1">
+          <li
+            className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(1)}
+          >
+            <img
+              src={temp1}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        </div>,
+        <div className="item" data-value="2">
+          <li
+            className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(2)}
+          >
+            <img
+              src={template2}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        </div>,
+        <div className="item" data-value="3">
+          <li
+            className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(3)}
+          >
+            <img
+              src={template3}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        </div>,
+        <div className="item" data-value="4">
+          <li
+            className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(4)}
+          >
+            <img
+              src={template4}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        </div>,
+        <div className="item" data-value="5">
+          <li
+            className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(5)}
+          >
+            <img
+              src={template5}
+              alt=""
+              style={{
+                width: "150px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            />
+          </li>
+        </div>,
+      </div>
+    
   ];
 
   const [bold, setbold] = useState(false);
@@ -1878,6 +1900,7 @@ const ResumeFunction = () => {
   // *********************************************
   // *********************************************
   // *********************************************
+  const [convertedText, setConvertedText] = useState();
 
   return (
     <>
@@ -2092,7 +2115,7 @@ const ResumeFunction = () => {
                                           ? " border-radius-50"
                                           : " border-radius-none")
                                       }
-                                      alt="Loading..."
+                                      alt=""
                                     />
                                     <div className="right-add  uploading-image">
                                       <h6>Profile Photo</h6>
@@ -2369,26 +2392,56 @@ const ResumeFunction = () => {
 
                           {/* first end */}
                           <Col md={12} xs={12} className="my-3">
-                            <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                            {/* <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
                               <label htmlFor="">Description</label>
 
                               
-                            </div>
+                            </div> */}
 
-                            <div id="float-label" style={{maxWidth:"67%"}}>
-                            <Editor
-	  
-	  toolbar={{
-        options: ['inline',  'list','textAlign'],
-        inline: { isDropdown: false ,options: ['bold', 'italic', 'underline']   },
-        list: { isDropdown: false ,options:['ordered','unordered']},
-		textAlign:{isDropdown: false ,options:['left','justify']}
-        
-    }}
-         wrapperStyle={{ width: 327, border: "1px solid black",backgroundColor:"#e8eff3" }}
-      />
-                             
-                              <p>e.g Description</p>
+                            <div id="float-label" style={{ maxWidth: "67%" }}>
+
+                              <Editor
+
+                                value={state.about_us}
+                                onChange={handleChange}
+
+
+                                toolbar={{
+                                  options: ['inline', 'list', 'textAlign'],
+                                  inline: { isDropdown: false, options: ['bold', 'italic', 'underline'] },
+                                  list: { isDropdown: false, options: ['ordered', 'unordered'] },
+                                  textAlign: { isDropdown: false, options: ['left', 'justify'] },
+
+                                }}
+
+                                wrapperStyle={{ width: 327, backgroundColor: "#e8eff3" }}
+                              />
+                              {/* <ReactQuill
+                                // theme='snow'
+                                value={convertedText}
+                                onChange={setConvertedText}
+                                style={{ minHeight: '100px', backgroundColor: "#e8eff3" }}
+                              /> */}
+
+                              {/* <Textedito onChange={handleChange}/> */}
+
+                              {/* <TextareaAutosize
+                              type="text"
+                              className="des"
+                              cols="3"
+                              rows="15"
+                              id="descc" 
+                              maxLength="25"
+                              /> */}
+
+                              <div style={{ background: "#e8eff3", maxWidth: "67%" }}>
+                                <label htmlFor=""> e.g Description</label>
+
+
+                              </div>
+
+                              {/* <p>e.g Description</p> */}
+
                             </div>
                           </Col>
 
@@ -3115,7 +3168,7 @@ const ResumeFunction = () => {
                     {/* <div className="show-content"> */}
 
                     <div
-                      className="container p-5 mb-5"
+                      className="container"
                       style={{ background: "#f5f9fc" }}
                     >
                       <div className="cus-yts-66-r-s">

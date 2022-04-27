@@ -676,11 +676,13 @@ const NewComponent = (props) => {
 
   const items = [
     // resume 1
+    <div className="zoom">
     <div className="item" data-value="1">
       <li
         className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
         onClick={() => toggleTab(1)}
       >
+      
         <img
           src={Screenshot1}
           alt=""
@@ -690,9 +692,13 @@ const NewComponent = (props) => {
               "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
           }}
         />
+        
       </li>
+    </div>
     </div>,
+   
     // resume 2
+    <div className="zoom">
     <div className="item" data-value="2">
       <li
         className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
@@ -708,8 +714,11 @@ const NewComponent = (props) => {
           }}
         />
       </li>
+    </div>
     </div>,
+   
     // resume 3
+    <div className="zoom">
     <div className="item" data-value="3">
       <li
         className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
@@ -725,8 +734,12 @@ const NewComponent = (props) => {
           }}
         />
       </li>
+    </div>
     </div>,
+    
+    
     // resume 4
+    <div className="zoom">
     <div className="item" data-value="4">
       <li
         className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
@@ -742,8 +755,11 @@ const NewComponent = (props) => {
           }}
         />
       </li>
+    </div>
     </div>,
+    
     // resume 5
+    <div className="zoom">
     <div className="item" data-value="5">
       <li
         className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
@@ -759,8 +775,11 @@ const NewComponent = (props) => {
           }}
         />
       </li>
+    </div>
     </div>,
+    
     // resume 6
+    <div className="zoom">
     <div className="item" data-value="6">
       <li
         className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
@@ -776,27 +795,13 @@ const NewComponent = (props) => {
           }}
         />
       </li>
+    </div>
     </div>,
-    // resume 7
-    // <div className="item" data-value="7">
-    //   <li
-    //     className={toggleState === 7 ? "tabs active-tabs" : "tabs"}
-    //     onClick={() => toggleTab(7)}
-    //   >
-    //     <img
-    //       src={tem6}
-    //       alt=""
-    //       style={{
-    //         width: "150px",
-    //         boxShadow:
-    //           "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-    //       }}
-    //     />
-    //   </li>
-    // </div>,
+    
+    
 
     //------------------------------------------------resume8-------------------------------
-
+    <div className="zoom">
     <div className="item" data-value="8">
       <li
         className={toggleState === 8 ? "tabs active-tabs" : "tabs"}
@@ -812,7 +817,9 @@ const NewComponent = (props) => {
           }}
         />
       </li>
+    </div>
     </div>,
+    <div className="zoom">
     <div className="item" data-value="9">
       <li
         className={toggleState === 9 ? "tabs active-tabs" : "tabs"}
@@ -828,89 +835,9 @@ const NewComponent = (props) => {
           }}
         />
       </li>
+    </div>
     </div>,
-
-    // ,
-    // <div className="item" data-value="1">
-    //   <li
-    //     className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-    //     onClick={() => toggleTab(1)}
-    //   >
-    //     <img
-    //       src={temp1}
-    //       alt=""
-    //       style={{
-    //         width: "150px",
-    //         boxShadow:
-    //           "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-    //       }}
-    //     />
-    //   </li>
-    // </div>,
-    // <div className="item" data-value="2">
-    //   <li
-    //     className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-    //     onClick={() => toggleTab(2)}
-    //   >
-    //     <img
-    //       src={template2}
-    //       alt=""
-    //       style={{
-    //         width: "150px",
-    //         boxShadow:
-    //           "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-    //       }}
-    //     />
-    //   </li>
-    // </div>,
-    // <div className="item" data-value="3">
-    //   <li
-    //     className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-    //     onClick={() => toggleTab(3)}
-    //   >
-    //     <img
-    //       src={template3}
-    //       alt=""
-    //       style={{
-    //         width: "150px",
-    //         boxShadow:
-    //           "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-    //       }}
-    //     />
-    //   </li>
-    // </div>,
-    // <div className="item" data-value="4">
-    //   <li
-    //     className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-    //     onClick={() => toggleTab(4)}
-    //   >
-    //     <img
-    //       src={template4}
-    //       alt=""
-    //       style={{
-    //         width: "150px",
-    //         boxShadow:
-    //           "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-    //       }}
-    //     />
-    //   </li>
-    // </div>,
-    // <div className="item" data-value="5">
-    //   <li
-    //     className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
-    //     onClick={() => toggleTab(5)}
-    //   >
-    //     <img
-    //       src={template5}
-    //       alt=""
-    //       style={{
-    //         width: "150px",
-    //         boxShadow:
-    //           "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-    //       }}
-    //     />
-    //   </li>
-    // </div>
+    
   ];
   // Line Hight increment
   const [Lineh, setLineh] = useState({
@@ -1411,7 +1338,8 @@ const NewComponent = (props) => {
                                       Nationality
                                     </p>
                                     <p
-                                      style={Lineh}
+                                       style={Lineh}
+                                     
                                       className="template__section__info__value "
                                     >
                                       {state.nationality
@@ -1817,6 +1745,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
+                                      color:"#6a6a6a",
                                     }}
                                   >
                                     {state.Phone ? state.Phone : "+1762721018"}
@@ -1831,6 +1760,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
+                                      color:"#6a6a6a",
                                     }}
                                   >
                                     {state.emaill
@@ -1847,6 +1777,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
+                                      color:"#6a6a6a",
                                     }}
                                   >
                                     {state.nationality}
@@ -1866,6 +1797,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
+                                      color:"#6a6a6a",
                                     }}
                                   >
                                     {state.address}
@@ -1879,6 +1811,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
+                                      color:"#6a6a6a",
                                     }}
                                   >
                                     {state.links}
@@ -1892,6 +1825,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
+                                      color:"#6a6a6a",
                                     }}
                                   >
                                     {state.date ? state.date : "1996-9-11"}
@@ -1960,7 +1894,7 @@ const NewComponent = (props) => {
                                   </h5>
                                   <div
                                     className="template-two-Language s-88"
-                                    style={{ left: "-1.5rem" }}
+                                    style={{ left: "-1rem" }}
                                   >
                                     {(JSON.parse(
                                       localStorage.getItem("language")
@@ -2113,7 +2047,7 @@ const NewComponent = (props) => {
                                 style={{
                                   fontWeight: "300",
                                   fontSize: 15,
-                                  color: "#6a6a6a",
+                                  // color: "#6a6a6a",
                                 }}
                               >
                                 {state.date ? state.date : "1996-9-11"}
@@ -2155,7 +2089,7 @@ const NewComponent = (props) => {
                                 className="Nationality-cus"
                                 style={{
                                   fontWeight: "300",
-                                  color: "#6a6a6a",
+                                  // color: "#6a6a6a",
                                   fontSize: 15,
                                 }}
                               >
@@ -2168,7 +2102,7 @@ const NewComponent = (props) => {
                                 style={{
                                   fontWeight: "300",
                                   fontSize: 15,
-                                  color: "#6a6a6a",
+                                  // color: "#6a6a6a",
                                 }}
                               >
                                 {state.links}
@@ -2892,7 +2826,7 @@ const NewComponent = (props) => {
                                 <div className="icon">
                                   <i className="fas fa-arrow-circle-right"></i>
                                 </div>
-                                <div style={{ color: "white" }}>
+                                <div className="data" style={{ color: "white" }}>
                                   *Date of Birth
                                   <div className="data">
                                     {state.date ? state.date : "1996-9-11"}
@@ -2904,7 +2838,7 @@ const NewComponent = (props) => {
                                 <div className="icon">
                                   <i className="fas fa-arrow-circle-right"></i>
                                 </div>
-                                <div style={{ color: "white" }}>
+                                <div className="data" style={{ color: "white" }}>
                                   *Address
                                   <div className="data">
                                     {state.address
@@ -2917,7 +2851,7 @@ const NewComponent = (props) => {
                                 <div className="icon">
                                   <i className="fas fa-arrow-circle-right"></i>
                                 </div>
-                                <div style={{ color: "white" }}>
+                                <div className="data" style={{ color: "white" }}>
                                   *Phone
                                   <div className="data">
                                     {state.Phone ? state.Phone : "1111122222"}
@@ -2928,7 +2862,7 @@ const NewComponent = (props) => {
                                 <div className="icon">
                                   <i className="fas fa-arrow-circle-right"></i>
                                 </div>
-                                <div style={{ color: "white" }}>
+                                <div className="data" style={{ color: "white" }}>
                                   *Email
                                   <div className="data">
                                     {state.email
@@ -2941,7 +2875,7 @@ const NewComponent = (props) => {
                                 <div className="icon">
                                   <i className="fas fa-arrow-circle-right"></i>
                                 </div>
-                                <div style={{ color: "white" }}>
+                                <div className="data" style={{ color: "white" }}>
                                   *Nationality
                                   <div className="data">
                                     {state.nationality
@@ -2954,7 +2888,7 @@ const NewComponent = (props) => {
                                 <div className="icon">
                                   <i className="fas fa-arrow-circle-right"></i>
                                 </div>
-                                <div style={{ color: "white" }}>
+                                <div className="data" style={{ color: "white" }}>
                                   *Link
                                   <div className="data">
                                     {state.links

@@ -552,7 +552,7 @@ const ContactInformation = (props) => {
                           ? localStorage.getItem("img")
                           : "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
                       }
-                      alt="Profile Photo"
+                      alt=""
                       className={
                         props.Rades === true
                           ? " border-radius-50"
@@ -1098,7 +1098,7 @@ const ContactInformation = (props) => {
                             ? localStorage.getItem("img")
                             : "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
                         }
-                        alt="Profile Photo"
+                        alt=""
                         className={
                           props.Rades === true
                             ? " border-radius-50"
@@ -1121,6 +1121,7 @@ const ContactInformation = (props) => {
                           style={{
                             fontWeight: "300",
                             fontSize: 15,
+                            color:"#6a6a6a",
                           }}
                         >
                           {props.Phone ? props.Phone : "+1762721018"}
@@ -1135,6 +1136,7 @@ const ContactInformation = (props) => {
                           style={{
                             fontWeight: "300",
                             fontSize: 15,
+                            color:"#6a6a6a",
                           }}
                         >
                           {props.Email ? props.Email : "abcd@gmail.com"}
@@ -1149,6 +1151,7 @@ const ContactInformation = (props) => {
                           style={{
                             fontWeight: "300",
                             fontSize: 15,
+                            color:"#6a6a6a",
                           }}
                         >
                           {props.Nationality}
@@ -1168,6 +1171,7 @@ const ContactInformation = (props) => {
                           style={{
                             fontWeight: "300",
                             fontSize: 15,
+                            color:"#6a6a6a",
                           }}
                         >
                           {props.Address}
@@ -1181,6 +1185,7 @@ const ContactInformation = (props) => {
                           style={{
                             fontWeight: "300",
                             fontSize: 15,
+                            color:"#6a6a6a",
                           }}
                         >
                           {props.Link}
@@ -1194,6 +1199,7 @@ const ContactInformation = (props) => {
                           style={{
                             fontWeight: "300",
                             fontSize: 15,
+                            color:"#6a6a6a",
                           }}
                         >
                           {props.date ? props.date : "1996-9-11"}
@@ -1253,7 +1259,7 @@ const ContactInformation = (props) => {
                         </h5>
                         <div
                           className="template-two-Language s-88"
-                          style={{ left: "-2.3rem" }}
+                          style={{ left: "-2.7rem" }}
                         >
                           {(JSON.parse(localStorage.getItem("language"))?.length
                             ? JSON.parse(localStorage.getItem("language"))
@@ -1364,7 +1370,7 @@ const ContactInformation = (props) => {
                             ? localStorage.getItem("img")
                             : "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
                         }
-                        alt="Profile Photo"
+                        alt=""
                         className={
                           props.Rades === true
                             ? " border-radius-50"
@@ -1394,7 +1400,7 @@ const ContactInformation = (props) => {
                       style={{
                         fontWeight: "300",
                         fontSize: 15,
-                        color: "#6a6a6a",
+                        // color: "#6a6a6a",
                       }}
                     >
                       {props.date ? props.date : "1996-9-11"}
@@ -1436,7 +1442,7 @@ const ContactInformation = (props) => {
                       className="Nationality-cus"
                       style={{
                         fontWeight: "300",
-                        color: "#6a6a6a",
+                        // color: "#6a6a6a",
                         fontSize: 15,
                       }}
                     >
@@ -1449,7 +1455,7 @@ const ContactInformation = (props) => {
                       style={{
                         fontWeight: "300",
                         fontSize: 15,
-                        color: "#6a6a6a",
+                        // color: "#6a6a6a",
                       }}
                     >
                       {props.Link}
