@@ -72,20 +72,20 @@ const Language = ({ langua, index, completelangua, removelangua }) => {
 function ADdSkill({ Skilla, index, removeSkilla }) {
   if (Skilla)
     return (
-      <>      
-      <div
-        className="ADdSkill"
-        style={{ textDecoration: Skilla?.isCompleted ? "line-through" : "" }}
-      >
-        <ul id="Skilla2" style={{ positon: "relative", marginLeft: "-1rem" }}>
-          <li id="Skilla23">
-            {Skilla}
-            <button id="removeSkilla" onClick={() => removeSkilla(Skilla)}>
-              x
-            </button>
-          </li>
-        </ul>
-      </div>
+      <>
+        <div
+          className="ADdSkill"
+          style={{ textDecoration: Skilla?.isCompleted ? "line-through" : "" }}
+        >
+          <ul id="Skilla2" style={{ positon: "relative", marginLeft: "-1rem" }}>
+            <li id="Skilla23">
+              {Skilla}
+              <button id="removeSkilla" onClick={() => removeSkilla(Skilla)}>
+                x
+              </button>
+            </li>
+          </ul>
+        </div>
       </>
 
     );
@@ -677,167 +677,167 @@ const NewComponent = (props) => {
   const items = [
     // resume 1
     <div className="zoom">
-    <div className="item" data-value="1">
-      <li
-        className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(1)}
-      >
-      
-        <img
-          src={Screenshot1}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-        
-      </li>
-    </div>
+      <div className="item" data-value="1">
+        <li
+          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(1)}
+        >
+
+          <img
+            src={Screenshot1}
+            alt=""
+            style={{
+              width: "150px",
+              boxShadow:
+                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            }}
+          />
+
+        </li>
+      </div>
     </div>,
-   
+
     // resume 2
     <div className="zoom">
-    <div className="item" data-value="2">
-      <li
-        className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(2)}
-      >
-        <img
-          src={template2}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>
+      <div className="item" data-value="2">
+        <li
+          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(2)}
+        >
+          <img
+            src={template2}
+            alt=""
+            style={{
+              width: "150px",
+              boxShadow:
+                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            }}
+          />
+        </li>
+      </div>
     </div>,
-   
+
     // resume 3
     <div className="zoom">
-    <div className="item" data-value="3">
-      <li
-        className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(3)}
-      >
-        <img
-          src={template3}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>
+      <div className="item" data-value="3">
+        <li
+          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(3)}
+        >
+          <img
+            src={template3}
+            alt=""
+            style={{
+              width: "150px",
+              boxShadow:
+                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            }}
+          />
+        </li>
+      </div>
     </div>,
-    
-    
+
+
     // resume 4
     <div className="zoom">
-    <div className="item" data-value="4">
-      <li
-        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(4)}
-      >
-        <img
-          src={template4}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>
+      <div className="item" data-value="4">
+        <li
+          className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(4)}
+        >
+          <img
+            src={template4}
+            alt=""
+            style={{
+              width: "150px",
+              boxShadow:
+                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            }}
+          />
+        </li>
+      </div>
     </div>,
-    
+
     // resume 5
     <div className="zoom">
-    <div className="item" data-value="5">
-      <li
-        className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(5)}
-      >
-        <img
-          src={template5}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>
+      <div className="item" data-value="5">
+        <li
+          className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(5)}
+        >
+          <img
+            src={template5}
+            alt=""
+            style={{
+              width: "150px",
+              boxShadow:
+                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            }}
+          />
+        </li>
+      </div>
     </div>,
-    
+
     // resume 6
     <div className="zoom">
-    <div className="item" data-value="6">
-      <li
-        className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(6)}
-      >
-        <img
-          src={tem6}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>
+      <div className="item" data-value="6">
+        <li
+          className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(6)}
+        >
+          <img
+            src={tem6}
+            alt=""
+            style={{
+              width: "150px",
+              boxShadow:
+                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            }}
+          />
+        </li>
+      </div>
     </div>,
-    
-    
+
+
 
     //------------------------------------------------resume8-------------------------------
     <div className="zoom">
-    <div className="item" data-value="8">
-      <li
-        className={toggleState === 8 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(8)}
-      >
-        <img
-          src={template8}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>
+      <div className="item" data-value="8">
+        <li
+          className={toggleState === 8 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(8)}
+        >
+          <img
+            src={template8}
+            alt=""
+            style={{
+              width: "150px",
+              boxShadow:
+                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            }}
+          />
+        </li>
+      </div>
     </div>,
     <div className="zoom">
-    <div className="item" data-value="9">
-      <li
-        className={toggleState === 9 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(9)}
-      >
-        <img
-          src={resume1}
-          alt=""
-          style={{
-            width: "150px",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-          }}
-        />
-      </li>
-    </div>
+      <div className="item" data-value="9">
+        <li
+          className={toggleState === 9 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(9)}
+        >
+          <img
+            src={resume1}
+            alt=""
+            style={{
+              width: "150px",
+              boxShadow:
+                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            }}
+          />
+        </li>
+      </div>
     </div>,
-    
+
   ];
   // Line Hight increment
   const [Lineh, setLineh] = useState({
@@ -1249,7 +1249,7 @@ const NewComponent = (props) => {
                               </p>
                               <Education
                                 Eduac={Eduac}
-                                // onDelete2={onDelete2}
+                              // onDelete2={onDelete2}
                               />
                             </td>
                             <td className="template__classical__column template__johannesburg__column">
@@ -1267,7 +1267,7 @@ const NewComponent = (props) => {
                                   <div className="d_o_b template__header__info template__header__info--birthday">
                                     <p
                                       style={Lineh}
-                                      className="template__section__subtitle"
+                                      className="template__section__subtitle "
                                     >
                                       Date of Birth
                                     </p>
@@ -1282,7 +1282,7 @@ const NewComponent = (props) => {
                                   <div className="template__header__info template__header__info--nationality">
                                     <p
                                       style={Lineh}
-                                      className="template__section__subtitle"
+                                      className="template__section__subtitle language-header"
                                     >
                                       Address
                                     </p>
@@ -1299,7 +1299,7 @@ const NewComponent = (props) => {
                                   <div className="template__header__info template__header__info--nationality">
                                     <p
                                       style={Lineh}
-                                      className="template__section__subtitle"
+                                      className="template__section__subtitle language-header"
                                     >
                                       Phone
                                     </p>
@@ -1316,7 +1316,7 @@ const NewComponent = (props) => {
                                   <div className="template__header__info template__header__info--nationality">
                                     <p
                                       style={Lineh}
-                                      className="template__section__subtitle"
+                                      className="template__section__subtitle language-header"
                                     >
                                       Email
                                     </p>
@@ -1333,13 +1333,13 @@ const NewComponent = (props) => {
                                   <div className="template__header__info template__header__info--nationality">
                                     <p
                                       style={Lineh}
-                                      className="template__section__subtitle"
+                                      className="template__section__subtitle language-header"
                                     >
                                       Nationality
                                     </p>
                                     <p
-                                       style={Lineh}
-                                     
+                                      style={Lineh}
+
                                       className="template__section__info__value "
                                     >
                                       {state.nationality
@@ -1350,7 +1350,7 @@ const NewComponent = (props) => {
                                   <div className="template__header__info">
                                     <p
                                       style={Lineh}
-                                      className="template__section__subtitle"
+                                      className="template__section__subtitle language-header"
                                     >
                                       Link
                                     </p>
@@ -1366,7 +1366,7 @@ const NewComponent = (props) => {
                                   <div className="template__header__info skill_cus_here">
                                     <p
                                       style={Lineh}
-                                      className="template__section__subtitle"
+                                      className="template__section__subtitle language-header"
                                     >
                                       Skill
                                     </p>
@@ -1374,18 +1374,20 @@ const NewComponent = (props) => {
                                       style={Lineh}
                                       className="template__section__info__value "
                                     >
-                                      <div className="  title template__section__info__value  template-two-Language">
+                                      <div className="  title template__section__info__value  template-two-Language"
+                                      // style={{ marginLeft: "-1rem" }}
+                                      >
                                         {(JSON.parse(
                                           localStorage.getItem("skill")
                                         )?.length
                                           ? JSON.parse(
-                                              localStorage.getItem("skill")
-                                            )
+                                            localStorage.getItem("skill")
+                                          )
                                           : [
-                                              { text: " ex:React" },
-                                              { text: "Anguler" },
-                                              { text: "Node" },
-                                            ]
+                                            { text: " ex:React" },
+                                            { text: "Anguler" },
+                                            { text: "Node" },
+                                          ]
                                         ).map((Skilla, index) => {
                                           return (
                                             <ADdSkill
@@ -1416,13 +1418,13 @@ const NewComponent = (props) => {
                                           localStorage.getItem("language")
                                         )?.length
                                           ? JSON.parse(
-                                              localStorage.getItem("language")
-                                            )
+                                            localStorage.getItem("language")
+                                          )
                                           : [
-                                              { text: "ex:English" },
-                                              { text: "hindi" },
-                                              { text: "Urdu" },
-                                            ]
+                                            { text: "ex:English" },
+                                            { text: "hindi" },
+                                            { text: "Urdu" },
+                                          ]
                                         ).map((langua, index) => (
                                           <Language
                                             id="lableColor"
@@ -1481,7 +1483,7 @@ const NewComponent = (props) => {
                                 <p
                                   className=" title template__section__info__value"
                                   data-placeholder="Web Developer"
-                                  // style={{ color: "white" }}
+                                // style={{ color: "white" }}
                                 >
                                   {state.occupation
                                     ? state.occupation
@@ -1595,7 +1597,7 @@ const NewComponent = (props) => {
                               <div className="jobtitl">
                                 <Experince
                                   todoos={todoos}
-                                  //  ondDelete={ondDelete}
+                                //  ondDelete={ondDelete}
                                 />
                               </div>
                             </Col>
@@ -1619,10 +1621,10 @@ const NewComponent = (props) => {
                                   ?.length
                                   ? JSON.parse(localStorage.getItem("language"))
                                   : [
-                                      { text: "ex:English" },
-                                      { text: "hindi" },
-                                      { text: "Urdu" },
-                                    ]
+                                    { text: "ex:English" },
+                                    { text: "hindi" },
+                                    { text: "Urdu" },
+                                  ]
                                 ).map((langua, index) => (
                                   <Language
                                     id="lableColor"
@@ -1647,10 +1649,10 @@ const NewComponent = (props) => {
                                   ?.length
                                   ? JSON.parse(localStorage.getItem("skill"))
                                   : [
-                                      { text: " ex:React" },
-                                      { text: "Anguler" },
-                                      { text: "Node" },
-                                    ]
+                                    { text: " ex:React" },
+                                    { text: "Anguler" },
+                                    { text: "Node" },
+                                  ]
                                 ).map((Skilla, index) => {
                                   return (
                                     <ADdSkill
@@ -1693,6 +1695,23 @@ const NewComponent = (props) => {
                                   {state.name ? state.name : "Robert John"}{" "}
                                   {state.LastName}
                                 </h4>
+                                {/* <Col md={3}>
+                                  <div className="sixthImg">
+                                    <img
+                                      className={
+                                        localStorage.getItem("Rades") === true
+                                          ? "border-radius-50"
+                                          : "border-radius-none"
+                                      }
+                                      src={
+                                        localStorage.getItem("img")
+                                          ? localStorage.getItem("img")
+                                          : "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
+                                      }
+                                      alt="Profile Photo"
+                                    />
+                                  </div>
+                                </Col> */}
                               </div>
 
                               <p
@@ -1745,7 +1764,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
-                                      color:"#6a6a6a",
+                                      color: "#6a6a6a",
                                     }}
                                   >
                                     {state.Phone ? state.Phone : "+1762721018"}
@@ -1760,7 +1779,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
-                                      color:"#6a6a6a",
+                                      color: "#6a6a6a",
                                     }}
                                   >
                                     {state.emaill
@@ -1777,7 +1796,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
-                                      color:"#6a6a6a",
+                                      color: "#6a6a6a",
                                     }}
                                   >
                                     {state.nationality}
@@ -1797,7 +1816,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
-                                      color:"#6a6a6a",
+                                      color: "#6a6a6a",
                                     }}
                                   >
                                     {state.address}
@@ -1811,7 +1830,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
-                                      color:"#6a6a6a",
+                                      color: "#6a6a6a",
                                     }}
                                   >
                                     {state.links}
@@ -1825,7 +1844,7 @@ const NewComponent = (props) => {
                                     style={{
                                       fontWeight: "300",
                                       fontSize: 15,
-                                      color:"#6a6a6a",
+                                      color: "#6a6a6a",
                                     }}
                                   >
                                     {state.date ? state.date : "1996-9-11"}
@@ -1846,7 +1865,7 @@ const NewComponent = (props) => {
                               </h5>
                               <Experince
                                 todoos={todoos}
-                                // ondDelete={ondDelete}
+                              // ondDelete={ondDelete}
                               />
                             </Row>
                             <hr />
@@ -1874,7 +1893,7 @@ const NewComponent = (props) => {
                                 </h5>
                                 <Education
                                   Eduac={Eduac}
-                                  // onDelete2={onDelete2}
+                                // onDelete2={onDelete2}
                                 />
                                 {/* <Todo
                                     todos={todos}
@@ -1892,21 +1911,23 @@ const NewComponent = (props) => {
                                   >
                                     Language
                                   </h5>
-                                  <div
+                                  {/* <div
                                     className="template-two-Language s-88"
                                     style={{ left: "-1rem" }}
-                                  >
+                                  > */}
+                                  <div className="template-two-skill"
+                                    style={{ left: "0rem" }}>
                                     {(JSON.parse(
                                       localStorage.getItem("language")
                                     )?.length
                                       ? JSON.parse(
-                                          localStorage.getItem("language")
-                                        )
+                                        localStorage.getItem("language")
+                                      )
                                       : [
-                                          { text: "ex:English" },
-                                          { text: "hindi" },
-                                          { text: "Urdu" },
-                                        ]
+                                        { text: "ex:English" },
+                                        { text: "hindi" },
+                                        { text: "Urdu" },
+                                      ]
                                     ).map((langua, index) => (
                                       <Language
                                         id="lableColor"
@@ -1930,13 +1951,13 @@ const NewComponent = (props) => {
                                     {(JSON.parse(localStorage.getItem("skill"))
                                       ?.length
                                       ? JSON.parse(
-                                          localStorage.getItem("skill")
-                                        )
+                                        localStorage.getItem("skill")
+                                      )
                                       : [
-                                          { text: " ex:React" },
-                                          { text: "Anguler" },
-                                          { text: "Node" },
-                                        ]
+                                        { text: " ex:React" },
+                                        { text: "Anguler" },
+                                        { text: "Node" },
+                                      ]
                                     ).map((Skilla, index) => {
                                       return (
                                         <ADdSkill
@@ -2120,7 +2141,7 @@ const NewComponent = (props) => {
                               <hr />
                               <Experince
                                 todoos={todoos}
-                                // ondDelete={ondDelete}
+                              // ondDelete={ondDelete}
                               />
                             </Col>
                             <Col md={4} sm={4} lg={4} sx={4}>
@@ -2137,13 +2158,13 @@ const NewComponent = (props) => {
                                     {(JSON.parse(localStorage.getItem("skill"))
                                       ?.length
                                       ? JSON.parse(
-                                          localStorage.getItem("skill")
-                                        )
+                                        localStorage.getItem("skill")
+                                      )
                                       : [
-                                          { text: " ex:React" },
-                                          { text: "Anguler" },
-                                          { text: "Node" },
-                                        ]
+                                        { text: " ex:React" },
+                                        { text: "Anguler" },
+                                        { text: "Node" },
+                                      ]
                                     ).map((Skilla, index) => {
                                       return (
                                         <ADdSkill
@@ -2166,13 +2187,13 @@ const NewComponent = (props) => {
                                       localStorage.getItem("language")
                                     )?.length
                                       ? JSON.parse(
-                                          localStorage.getItem("language")
-                                        )
+                                        localStorage.getItem("language")
+                                      )
                                       : [
-                                          { text: "ex:English" },
-                                          { text: "hindi" },
-                                          { text: "Urdu" },
-                                        ]
+                                        { text: "ex:English" },
+                                        { text: "hindi" },
+                                        { text: "Urdu" },
+                                      ]
                                     ).map((langua, index) => (
                                       <Language
                                         id="lableColor"
@@ -2204,7 +2225,7 @@ const NewComponent = (props) => {
                               <h5 id="EXPERIENCE">Education</h5>
                               <Education
                                 Eduac={Eduac}
-                                // onDelete2={onDelete2}
+                              // onDelete2={onDelete2}
                               />
                               {/* <Todo todos={todos} onDelete={onDelete} /> */}
                             </Col>
@@ -2383,13 +2404,13 @@ const NewComponent = (props) => {
                                     {(JSON.parse(localStorage.getItem("skill"))
                                       ?.length
                                       ? JSON.parse(
-                                          localStorage.getItem("skill")
-                                        )
+                                        localStorage.getItem("skill")
+                                      )
                                       : [
-                                          { text: " ex:React" },
-                                          { text: "Anguler" },
-                                          { text: "Node" },
-                                        ]
+                                        { text: " ex:React" },
+                                        { text: "Anguler" },
+                                        { text: "Node" },
+                                      ]
                                     ).map((Skilla, index) => {
                                       return (
                                         <ADdSkill
@@ -2420,13 +2441,13 @@ const NewComponent = (props) => {
                                       localStorage.getItem("language")
                                     )?.length
                                       ? JSON.parse(
-                                          localStorage.getItem("language")
-                                        )
+                                        localStorage.getItem("language")
+                                      )
                                       : [
-                                          { text: "ex:English" },
-                                          { text: "hindi" },
-                                          { text: "Urdu" },
-                                        ]
+                                        { text: "ex:English" },
+                                        { text: "hindi" },
+                                        { text: "Urdu" },
+                                      ]
                                     ).map((langua, index) => (
                                       <Language
                                         id="lableColor"
@@ -2458,7 +2479,7 @@ const NewComponent = (props) => {
                             </p>
                             <Education
                               Eduac={Eduac}
-                              // onDelete2={onDelete2}
+                            // onDelete2={onDelete2}
                             />
                           </td>
                         </tr>
@@ -2494,11 +2515,11 @@ const NewComponent = (props) => {
                                   }
                                   alt="Profile Photo"
                                   className={
-                                    
+
                                     (localStorage.getItem("Rades") === 'true'
                                       ? "border-radius-50"
                                       : "border-radius-none"
-                                      )
+                                    )
                                   }
                                 />
                                 {/* {selectedFile && } */}
@@ -2512,7 +2533,7 @@ const NewComponent = (props) => {
                               <div className="d_o_b template__header__info template__header__info--birthday">
                                 <p
                                   style={Lineh}
-                                  className="template__section__subtitle"
+                                  className="template__section__subtitle language-header"
                                 >
                                   Date of Birth
                                 </p>
@@ -2527,7 +2548,7 @@ const NewComponent = (props) => {
                               <div className="template__header__info template__header__info--nationality">
                                 <p
                                   style={Lineh}
-                                  className="template__section__subtitle"
+                                  className="template__section__subtitle language-header"
                                 >
                                   Address
                                 </p>
@@ -2544,7 +2565,7 @@ const NewComponent = (props) => {
                               <div className="template__header__info template__header__info--nationality">
                                 <p
                                   style={Lineh}
-                                  className="template__section__subtitle"
+                                  className="template__section__subtitle language-header"
                                 >
                                   Phone
                                 </p>
@@ -2559,7 +2580,7 @@ const NewComponent = (props) => {
                               <div className="template__header__info template__header__info--nationality">
                                 <p
                                   style={Lineh}
-                                  className="template__section__subtitle"
+                                  className="template__section__subtitle language-header"
                                 >
                                   Email
                                 </p>
@@ -2576,7 +2597,7 @@ const NewComponent = (props) => {
                               <div className="template__header__info template__header__info--nationality">
                                 <p
                                   style={Lineh}
-                                  className="template__section__subtitle"
+                                  className="template__section__subtitle language-header"
                                 >
                                   Nationality
                                 </p>
@@ -2592,7 +2613,7 @@ const NewComponent = (props) => {
                               <div className="template__header__info">
                                 <p
                                   style={Lineh}
-                                  className="template__section__subtitle"
+                                  className="template__section__subtitle language-header"
                                 >
                                   Link
                                 </p>
@@ -2606,7 +2627,7 @@ const NewComponent = (props) => {
                               <div className="template__header__info skill_cus_here">
                                 <p
                                   style={Lineh}
-                                  className="template__section__subtitle"
+                                  className="template__section__subtitle language-header"
                                 >
                                   Skill
                                 </p>
@@ -2618,13 +2639,13 @@ const NewComponent = (props) => {
                                     {(JSON.parse(localStorage.getItem("skill"))
                                       ?.length
                                       ? JSON.parse(
-                                          localStorage.getItem("skill")
-                                        )
+                                        localStorage.getItem("skill")
+                                      )
                                       : [
-                                          { text: " ex:React" },
-                                          { text: "Anguler" },
-                                          { text: "Node" },
-                                        ]
+                                        { text: " ex:React" },
+                                        { text: "Anguler" },
+                                        { text: "Node" },
+                                      ]
                                     ).map((Skilla, index) => {
                                       return (
                                         <ADdSkill
@@ -2641,27 +2662,28 @@ const NewComponent = (props) => {
                               </div>
                               <div className="template__header__info Language_cus_here">
                                 <p
-                                  style={Lineh}
-                                  className="template__section__subtitle language-header"
+                                  // style={Lineh}
+                                  style={{marginTop:"-25px"}}
+                                  className="template__section__subtitle language-header "
                                 >
                                   Language
                                 </p>
                                 <p
                                   style={Lineh}
-                                  className="template__section__info__value "
+                                  className="template__section__info__value  "
                                 >
                                   <div className="  title template__section__info__value template-two-Language">
                                     {(JSON.parse(
                                       localStorage.getItem("language")
                                     )?.length
                                       ? JSON.parse(
-                                          localStorage.getItem("language")
-                                        )
+                                        localStorage.getItem("language")
+                                      )
                                       : [
-                                          { text: "ex:English" },
-                                          { text: "hindi" },
-                                          { text: "Urdu" },
-                                        ]
+                                        { text: "ex:English" },
+                                        { text: "hindi" },
+                                        { text: "Urdu" },
+                                      ]
                                     ).map((langua, index) => (
                                       <Language
                                         id="lableColor"
@@ -2790,7 +2812,7 @@ const NewComponent = (props) => {
                             </p>
                             <Education
                               Eduac={Eduac}
-                              // onDelete2={onDelete2}
+                            // onDelete2={onDelete2}
                             />
                           </td>
                         </tr>
@@ -2908,10 +2930,10 @@ const NewComponent = (props) => {
                                 ?.length
                                 ? JSON.parse(localStorage.getItem("language"))
                                 : [
-                                    { text: "ex:English" },
-                                    { text: "hindi" },
-                                    { text: "Urdu" },
-                                  ]
+                                  { text: "ex:English" },
+                                  { text: "hindi" },
+                                  { text: "Urdu" },
+                                ]
                               ).map((langua, index) => (
                                 <Language
                                   id="lableColor"
@@ -2934,10 +2956,10 @@ const NewComponent = (props) => {
                             {(JSON.parse(localStorage.getItem("skill"))?.length
                               ? JSON.parse(localStorage.getItem("skill"))
                               : [
-                                  { text: " ex:React" },
-                                  { text: "Anguler" },
-                                  { text: "Node" },
-                                ]
+                                { text: " ex:React" },
+                                { text: "Anguler" },
+                                { text: "Node" },
+                              ]
                             ).map((Skilla, index) => {
                               return (
                                 <ADdSkill
@@ -3092,13 +3114,13 @@ const NewComponent = (props) => {
                                     {(JSON.parse(localStorage.getItem("skill"))
                                       ?.length
                                       ? JSON.parse(
-                                          localStorage.getItem("skill")
-                                        )
+                                        localStorage.getItem("skill")
+                                      )
                                       : [
-                                          { text: "React" },
-                                          { text: "Anguler" },
-                                          { text: "Node" },
-                                        ]
+                                        { text: "React" },
+                                        { text: "Anguler" },
+                                        { text: "Node" },
+                                      ]
                                     ).map((Skilla, index) => {
                                       return (
                                         <ADdSkill
@@ -3128,8 +3150,8 @@ const NewComponent = (props) => {
                                         localStorage.getItem("language")
                                       )?.length
                                         ? JSON.parse(
-                                            localStorage.getItem("language")
-                                          )
+                                          localStorage.getItem("language")
+                                        )
                                         : ["English", "hindi", "Urdu"]
                                       ).map((langua, index) => (
                                         <Language

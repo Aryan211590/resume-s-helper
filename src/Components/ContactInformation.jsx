@@ -577,7 +577,7 @@ const ContactInformation = (props) => {
                   </div>
 
                   <div className="template__header__info template__header__info--nationality">
-                    <p className="template__section__subtitle">Address</p>
+                    <p className="template__section__subtitle language-header">Address</p>
                     <p className="template__section__info__value ">
                       {props.Address
                         ? props.Address
@@ -586,33 +586,33 @@ const ContactInformation = (props) => {
                   </div>
 
                   <div className="template__header__info template__header__info--nationality">
-                    <p className="template__section__subtitle">Phone</p>
+                    <p className="template__section__subtitle language-header">Phone</p>
                     <p className="template__section__info__value ">
                       {props.Phone ? props.Phone : "+19922556677"}
                     </p>
                   </div>
 
                   <div className="d_o_b template__header__info template__header__info--birthday">
-                    <p className="template__section__subtitle">Date of Birth</p>
+                    <p className="template__section__subtitle language-header">Date of Birth</p>
                     <p className="  value-cus title template__section__info__value">
                       {props.date ? props.date : "9/16/1996"}
                     </p>
                   </div>
 
                   <div className="template__header__info template__header__info--nationality">
-                    <p className="template__section__subtitle">Nationality</p>
+                    <p className="template__section__subtitle language-header">Nationality</p>
                     <p className="template__section__info__value ">
                       {props.Nationality ? props.Nationality : "Amarican"}
                     </p>
                   </div>
                   <div className="template__header__info">
-                    <p className="template__section__subtitle">Link</p>
+                    <p className="template__section__subtitle language-header">Link</p>
                     <p className="template__section__info__value ">
                       {props.Link ? props.Link : "alibabaxyz.com"}
                     </p>
                   </div>
                   <div className="template__header__info skill_cus_here">
-                    <p className="template__section__subtitle">Skill</p>
+                    <p className="template__section__subtitle language-header">Skill</p>
                     <p className="template__section__info__value ">
                       <div
                         className="  title template__section__info__value  template-two-skill"
@@ -638,7 +638,7 @@ const ContactInformation = (props) => {
                     </p>
                   </div>
                   <div className="template__header__info Language_cus_here">
-                    <p className="template__section__subtitle">Language</p>
+                    <p className="template__section__subtitle language-header">Language</p>
                     <p className="template__section__info__value ">
                       <div
                         className="  title template__section__info__value template-two-Language"
@@ -1259,7 +1259,7 @@ const ContactInformation = (props) => {
                         </h5>
                         <div
                           className="template-two-Language s-88"
-                          style={{ left: "-2.7rem" }}
+                          style={{ left: "-2.1rem" }}
                         >
                           {(JSON.parse(localStorage.getItem("language"))?.length
                             ? JSON.parse(localStorage.getItem("language"))

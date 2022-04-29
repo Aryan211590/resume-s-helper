@@ -735,6 +735,11 @@ textarea {
 .active-tabs {
   background: #ffffff;
 }
+@media only screen and (max-width: 600px){
+  .active-tabs{
+    margin:9px;
+  }
+}
 
 /* .active-tabs::before {
   content: "";
@@ -774,6 +779,12 @@ textarea {
   background: #ffffff13;
   position: relative;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+  .tabs{
+    margin:9px;
+  }
 }
 
 .offcanvas.offcanvas-top.show {
@@ -2006,6 +2017,11 @@ h5#laxuverma\ EXPERIENCE\ color-golden {
 
 #dfdfd {
   width: 15%;
+}
+@media only screen and (max-width: 600px){
+  #dfdfd{
+    width:44%;
+  }
 }
 
 .dfdsf {
@@ -3807,6 +3823,11 @@ b.sfefbdfask {
   font-size: 23px;
   float: right;
   margin: 0px 10px;
+}
+@media only screen and (max-width: 600px){
+  .Tharteenper svg{
+    margin: 0px 0px;
+  }
 }
 
 /* .cus-yts-66 {
