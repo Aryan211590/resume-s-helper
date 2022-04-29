@@ -485,7 +485,7 @@ const Deep = () => {
                 data-interval="2500"
               >
                 <div class="carousel-inner">
-                  <div class="item active" style={{ width: "500px" }}>
+                  <div class="item active" >
                     <div class="carousel-col">
                       {/* <div class="block red img-responsive"></div> 
                       <img src={template8} alt="Resume_image" />*/}
@@ -505,7 +505,7 @@ const Deep = () => {
                   </div>
                 </div>
 
-                <div class="left carousel-control">
+                {/* <div class="left carousel-control">
                   <a href="#carousel" role="button" data-slide="prev">
                     <span
                       class="glyphicon glyphicon-chevron-left"
@@ -513,8 +513,8 @@ const Deep = () => {
                     ></span>
                     <span class="sr-only">Previous</span>
                   </a>
-                </div>
-                <div class="right carousel-control">
+                </div> */}
+                {/* <div class="right carousel-control">
                   <a href="#carousel" role="button" data-slide="next">
                     <span
                       class="glyphicon glyphicon-chevron-right"
@@ -522,7 +522,7 @@ const Deep = () => {
                     ></span>
                     <span class="sr-only">Next</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
